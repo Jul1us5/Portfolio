@@ -44,5 +44,9 @@ const nav = [
     {
         img: 'ps.png',
         text: 'PS',
+    },
+    {
+        img: 'sass.png',
+        text: 'SASS',
     }  
 ];
