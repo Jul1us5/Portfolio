@@ -31,7 +31,7 @@ $fields: rgb(238, 238, 238);
   }  
   #page > .left {
     grid-area: l;
-    background-color: $fields;
+    background-color: transparent;
   }
   #page > .right {
     grid-area: r;
@@ -39,7 +39,7 @@ $fields: rgb(238, 238, 238);
   } 
   #page > .area {
     grid-area: a;
-    background-color: $fields;
+    background-color: transparent;
   } 
   #page > .bottom {
     grid-area: b;
@@ -67,6 +67,21 @@ $fields: rgb(238, 238, 238);
         grid-gap: 1px;
         grid-template-rows: repeat(1, 1fr);
         grid-template-columns: repeat(3, 1fr);
+        .box {
+          display: block;
+          width: 50%;
+          height: 100%;
+          float: left;
+        }
+        .contact {
+          display: block;
+          width: 50%;
+          height: 100%;
+          float: left;
+          p {
+            margin-top: 10px;
+          }
+        }
       }
       #page > .qr {
         width: 100%;
@@ -76,7 +91,6 @@ $fields: rgb(238, 238, 238);
       }
       #page > .title {
         width: 100%;
-        // height: calc(100vh / 5);
         grid-area: t;
       }
       #page > .left {
@@ -104,6 +118,7 @@ $fields: rgb(238, 238, 238);
         height: 150px;
         grid-area: x;
       }
+
     }
 
   

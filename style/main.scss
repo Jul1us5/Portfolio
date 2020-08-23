@@ -39,33 +39,84 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    // background-color: rgb(65, 207, 207);
-    // padding: 4px;
     span {
         display: block;
         width: 100px;
-        // height: 20px;
         margin-left: 20px;
         font-weight: bold;
         text-align: center;
         font-family: 'Shadows Into Light', cursive;
         font-size: 18px;
         line-height: 20px;
-        background-color: rgb(26, 26, 26);
-        color: white;
+        background-color: rgb(235, 147, 14);
+        color: rgb(11, 11, 11);
+    }
+    .box {
+        display: block;
+        width: 100%;
+        height: 60%;
+        background-color: yellowgreen;
+        background-color: yellowgreen;
+        background: url(/img/IM.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .text {
+        display: inline-block;
+        width: 600px;
+        height: 200px;
+        margin-left: 0px;
+        font-family: 'Libre Caslon Display', serif;
+        background-color: rgb(255, 223, 176);
+        padding: 10px;
+    }
+    .contact {
+        display: block;
+        width: 100%;
+        height: 40%;
+        .fa {
+            width: 22px;
+            height: 22px;
+            float: left;
+            margin: 0px 20px;
+            font-size: 18px;
+            text-align: center;
+            background-color: rgb(230, 230, 230);
+            border-radius: 100px;
+            padding-top: 3px;
+            color: rgb(0, 0, 0);
+        }
+            .fa:hover {
+                background-color: rgb(58, 58, 58); 
+                color: white; 
+            }
+        p {
+            margin-top: 5px;
+            font-size: 10px;
+            text-align: left;
+            font-size: 15px;
+            font-weight: 900;
+            font-family: 'Libre Caslon Display', serif;
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: rgb(17, 192, 255);
+            }
+        }
     }
     div {
         display: inline-block;
-        width: 50px;
-        margin-left: 3px;
-        margin-top: 5px;
+        width: 55px;
         padding: 5px 0px; 
+        
         img {
             width: 30px;
             height: 30px;
-            margin-left: calc(25px - 15px);
+            margin-left: calc(25px - 10px);
             background-position: center center;
             background-repeat: no-repeat;
+            
 
         }
         p {
@@ -73,6 +124,7 @@ body {
             font-size: 10px;
             margin-top: 3px;
             font-weight: bold;
+            font-family: 'Montserrat', sans-serif; 
         }
     }
 }
