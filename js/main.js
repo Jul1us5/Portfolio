@@ -1,5 +1,5 @@
-let title = document.querySelector('.container');
-let field = '<span>Ką moku</span>';
+let title = document.querySelector('.all');
+let field = '';
 
 const navList = nav;
 
