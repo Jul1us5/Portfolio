@@ -60,22 +60,81 @@ body {
   font-family: 'Shadows Into Light', cursive;
   font-size: 18px;
   line-height: 20px;
-  background-color: #1a1a1a;
+  background-color: #eb930e;
+  color: #0b0b0b;
+}
+
+.container .box {
+  display: block;
+  width: 100%;
+  height: 60%;
+  background-color: yellowgreen;
+  background-color: yellowgreen;
+  background: url(/img/IM.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.container .text {
+  display: inline-block;
+  width: 600px;
+  height: 200px;
+  margin-left: 0px;
+  font-family: 'Libre Caslon Display', serif;
+  background-color: #ffdfb0;
+  padding: 10px;
+}
+
+.container .contact {
+  display: block;
+  width: 100%;
+  height: 40%;
+}
+
+.container .contact .fa {
+  width: 22px;
+  height: 22px;
+  float: left;
+  margin: 0px 20px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #e6e6e6;
+  border-radius: 100px;
+  padding-top: 3px;
+  color: black;
+}
+
+.container .contact .fa:hover {
+  background-color: #3a3a3a;
   color: white;
+}
+
+.container .contact p {
+  margin-top: 5px;
+  font-size: 10px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 900;
+  font-family: 'Libre Caslon Display', serif;
+}
+
+.container .contact p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #11c0ff;
 }
 
 .container div {
   display: inline-block;
-  width: 50px;
-  margin-left: 3px;
-  margin-top: 5px;
+  width: 55px;
   padding: 5px 0px;
 }
 
 .container div img {
   width: 30px;
   height: 30px;
-  margin-left: calc(25px - 15px);
+  margin-left: calc(25px - 10px);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -85,5 +144,6 @@ body {
   font-size: 10px;
   margin-top: 3px;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
