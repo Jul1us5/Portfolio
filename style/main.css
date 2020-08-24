@@ -139,13 +139,13 @@ body {
   font-size: 16px;
   font-weight: 900;
   font-family: 'Libre Caslon Display', serif;
-  color: #0091ff;
+  color: black;
 }
 
 .container .contact p a {
   text-decoration: none;
   font-weight: bold;
-  color: #0091ff;
+  color: black;
 }
 
 .container .contact a:hover {
