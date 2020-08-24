@@ -14,7 +14,7 @@ $fields: rgb(238, 238, 238);
         "q t t t t"
         "l a a a r"
         "l a a a r"
-        "l b b b b"
+        "l b b b r"
         "x x x x x"
     ;
     grid-template-rows: repeat(5, 1fr);
@@ -58,7 +58,8 @@ $fields: rgb(238, 238, 238);
   @media only screen and (max-width: 600px) {
     .wrapper { 
       width: 98%;
-        padding: 0px 2px;
+      height: 100%;
+      padding: 0px 2px;
         .container {
           span {
             width: 100px;
@@ -68,7 +69,7 @@ $fields: rgb(238, 238, 238);
           .text {
             height: auto;
     
-            // margin: 0;
+            margin: 0;
 
           }
           .all {
@@ -85,7 +86,7 @@ $fields: rgb(238, 238, 238);
             float: right;
             .fa {
               font-size: 30px;
-              color: rgb(20, 106, 255);
+              color: rgb(0, 0, 0);
             }
           }
           .nav_title {
@@ -93,11 +94,15 @@ $fields: rgb(238, 238, 238);
             width: 100px;
             height: 30px; 
             text-align: center; 
-            background-color: rgb(45, 97, 209);
-            color: white;
+            background-color: rgb(208, 208, 208);
+            color: rgb(0, 0, 0);
             float: left;
             font-weight: bold;
             border-radius: 0px 0px 7px 7px;
+          }
+          .nav_title:hover {
+            background-color: rgb(24, 24, 24);
+            color: white;
           }
         }
     }
@@ -154,7 +159,8 @@ $fields: rgb(238, 238, 238);
       } 
       #page > .area {
         width: 100%;
-        height: 390px;
+        // height: 500px;
+        margin-bottom: 30px;
         grid-area: a;
       } 
       #page > .bottom {
@@ -164,21 +170,22 @@ $fields: rgb(238, 238, 238);
       } 
       #page > .x {
         width: 100%;
-        height: 50px;
+        height: 300px;
         grid-area: x;
       }
       #page > .nav {
         display: inline-block;
         width: 100%;
         height: 60px;
-        grid-area: n;
-        
+        grid-area: n; 
       } 
+
 
     }
 
     @media only screen and (max-width: 1000px) and (min-width: 601px)  {
       .wrapper {
+        height: 100%;
         padding: 0px 6px;
         .container {
           .box {
@@ -187,12 +194,18 @@ $fields: rgb(238, 238, 238);
             margin-top: 20px;
           }
           .text {
-            min-height: 80%;
+            min-height: 64.5%;
             margin-bottom: 20px;
           }
           .contact {
             margin-top: 10px;
           }
+          .all {
+            margin-top: 52px;
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
         }
       }
       #page {
@@ -202,7 +215,6 @@ $fields: rgb(238, 238, 238);
             "q t t t t"
             "l a a a a"
             "l a a a a"
-            ". . . . ."
             "r r r r r"
             "b b b b b"
             "x x x x x"
@@ -210,13 +222,21 @@ $fields: rgb(238, 238, 238);
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: repeat(5, 1fr);
       }
+      #page > .qr {       
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+        grid-area: q;
+      }
       #page > .title {       
         width: 100%;
+        height: 100px;
         grid-area: t;
       }
       #page > .left {
         width: 100%;
         height: 500px;
+        margin-bottom: 120px;
         grid-area: l;
       }
       #page > .right {
@@ -229,13 +249,10 @@ $fields: rgb(238, 238, 238);
       } 
       #page > .bottom {
         width: 100%;
-        height: 200px;
         grid-area: b;
-        
       } 
       #page > .x {
         width: 100%;
-        height: 50px;
         grid-area: x;
       }
       #page > .nav {
@@ -243,7 +260,8 @@ $fields: rgb(238, 238, 238);
         width: 100%;
         height: 60px;
         grid-area: n;
-      } 
+      }
+ 
     }
 
 
