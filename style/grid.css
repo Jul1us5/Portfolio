@@ -9,7 +9,7 @@
   display: -ms-grid;
   display: grid;
   grid-gap: 2px;
-      grid-template-areas: "q t t t t" "l a a a r" "l a a a r" "l b b b b" "x x x x x";
+      grid-template-areas: "q t t t t" "l a a a r" "l a a a r" "l b b b r" "x x x x x";
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
   -ms-grid-columns: (1fr)[5];
@@ -43,7 +43,7 @@
 
 #page > .right {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 5;
   grid-area: r;
   background-color: #eeeeee;
@@ -61,7 +61,7 @@
 #page > .bottom {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
+  -ms-grid-column-span: 3;
   grid-area: b;
   background-color: #eeeeee;
 }
@@ -81,6 +81,7 @@
 @media only screen and (max-width: 600px) {
   .wrapper {
     width: 98%;
+    height: 100%;
     padding: 0px 2px;
   }
   .wrapper .container span {
@@ -90,6 +91,7 @@
   }
   .wrapper .container .text {
     height: auto;
+    margin: 0;
   }
   .wrapper .container .all {
     margin-top: 0px;
@@ -106,18 +108,22 @@
   }
   .wrapper .container .meniu .fa {
     font-size: 30px;
-    color: #146aff;
+    color: black;
   }
   .wrapper .container .nav_title {
     display: inline-block;
     width: 100px;
     height: 30px;
     text-align: center;
-    background-color: #2d61d1;
-    color: white;
+    background-color: #d0d0d0;
+    color: black;
     float: left;
     font-weight: bold;
     border-radius: 0px 0px 7px 7px;
+  }
+  .wrapper .container .nav_title:hover {
+    background-color: #181818;
+    color: white;
   }
   #page {
         grid-template-areas: "n n n" "l l l" "t t t" "a a a" "r r r" "b b b" "x x x";
@@ -176,7 +182,7 @@
   }
   #page > .area {
     width: 100%;
-    height: 390px;
+    margin-bottom: 30px;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -192,7 +198,7 @@
   }
   #page > .x {
     width: 100%;
-    height: 50px;
+    height: 300px;
     -ms-grid-row: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -211,6 +217,7 @@
 
 @media only screen and (max-width: 1000px) and (min-width: 601px) {
   .wrapper {
+    height: 100%;
     padding: 0px 6px;
   }
   .wrapper .container .box {
@@ -219,24 +226,39 @@
     margin-top: 20px;
   }
   .wrapper .container .text {
-    min-height: 80%;
+    min-height: 64.5%;
     margin-bottom: 20px;
   }
   .wrapper .container .contact {
     margin-top: 10px;
   }
+  .wrapper .container .all {
+    margin-top: 52px;
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
   #page {
     display: -ms-grid;
     display: grid;
     grid-gap: 2px;
-        grid-template-areas: "q t t t t" "l a a a a" "l a a a a" ". . . . ." "r r r r r" "b b b b b" "x x x x x";
+        grid-template-areas: "q t t t t" "l a a a a" "l a a a a" "r r r r r" "b b b b b" "x x x x x";
     -ms-grid-rows: (1fr)[6];
         grid-template-rows: repeat(6, 1fr);
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
   }
+  #page > .qr {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: q;
+  }
   #page > .title {
     width: 100%;
+    height: 100px;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 4;
@@ -245,6 +267,7 @@
   #page > .left {
     width: 100%;
     height: 500px;
+    margin-bottom: 120px;
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
@@ -252,7 +275,7 @@
   }
   #page > .right {
     width: 100%;
-    -ms-grid-row: 5;
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-area: r;
@@ -267,16 +290,14 @@
   }
   #page > .bottom {
     width: 100%;
-    height: 200px;
-    -ms-grid-row: 6;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-area: b;
   }
   #page > .x {
     width: 100%;
-    height: 50px;
-    -ms-grid-row: 7;
+    -ms-grid-row: 6;
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-area: x;
