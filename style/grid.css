@@ -90,7 +90,6 @@
   }
   .wrapper .container .text {
     height: auto;
-    margin: 0;
   }
   .wrapper .container .all {
     margin-top: 0px;
@@ -206,6 +205,86 @@
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
+    grid-area: n;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 601px) {
+  .wrapper {
+    padding: 0px 6px;
+  }
+  .wrapper .container .box {
+    height: 80%;
+    width: 200px;
+    margin-top: 20px;
+  }
+  .wrapper .container .text {
+    min-height: 80%;
+    margin-bottom: 20px;
+  }
+  .wrapper .container .contact {
+    margin-top: 10px;
+  }
+  #page {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2px;
+        grid-template-areas: "q t t t t" "l a a a a" "l a a a a" ". . . . ." "r r r r r" "b b b b b" "x x x x x";
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+  #page > .title {
+    width: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-area: t;
+  }
+  #page > .left {
+    width: 100%;
+    height: 500px;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: l;
+  }
+  #page > .right {
+    width: 100%;
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: r;
+  }
+  #page > .area {
+    width: 100%;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-area: a;
+  }
+  #page > .bottom {
+    width: 100%;
+    height: 200px;
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: b;
+  }
+  #page > .x {
+    width: 100%;
+    height: 50px;
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: x;
+  }
+  #page > .nav {
+    display: none;
+    width: 100%;
+    height: 60px;
     grid-area: n;
   }
 }
