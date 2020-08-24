@@ -10,6 +10,10 @@ const nav = [
         text: 'GIT',
     },
     {
+        img: 'agile.png',
+        text: 'Agile',
+    },
+    {
         img: 'js.jpg',
         text: 'JS',
     },
@@ -21,6 +25,10 @@ const nav = [
         img: 'html.svg',
         text: 'HTML',
     },
+    {
+        img: 'sass.png',
+        text: 'SASS',
+    },  
     {
         img: 'php.png',
         text: 'PHP',
@@ -44,9 +52,5 @@ const nav = [
     {
         img: 'ps.png',
         text: 'PS',
-    },
-    {
-        img: 'sass.png',
-        text: 'SASS',
-    }  
+    }
 ];
