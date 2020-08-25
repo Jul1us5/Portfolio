@@ -6,7 +6,7 @@ let field = '';
 const navList = nav;
 
 for(let i = 0; i < nav.length; i++) {
-    field += `<div>
+    field += `<div class="ico">
                 <img src="./img/ico/${navList[i]['img']}" alt="">
                 <p>${navList[i]['text']}</p>
               </div>`;

@@ -1,11 +1,6 @@
-@font-face {
-    src: url(/fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
-    font-family: Jo;
-}
-@font-face {
-    src: url(/fonts/Questrial/);
-    font-family: Que;
-}
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
 $p: rgb(72, 72, 72); // <p> color with <a>
 
 body {
@@ -48,6 +43,7 @@ body {
         padding: 10px;
     }
 }
+
 .container {
     width: 100%;
     height: 100%;
@@ -58,13 +54,21 @@ body {
         text-align: center;
         font-size: 18px;
         line-height: 20px;
-
         color: rgb(11, 11, 11);
         h3 {
             margin-top: 10px;
             font-weight: bold;
-            font-family: Jo;
+            font-family: 'Open Sans', sans-serif;
         }
+    }
+    .lang {
+        display: block; 
+        width: 100%;
+        height: 49%;
+        float: left;
+        padding-top: 20px;
+        margin-left: 2%;
+        // margin: 2px;
     }
     span:nth-child(1) {
         width: 200px;
@@ -85,7 +89,7 @@ body {
         grid-template-columns: 1fr;
         height: 200px;
         margin-left: 10px; // ???
-        font-family: Que;
+        font-family: 'Open Sans', sans-serif;
         padding: 15px;
         border: 1px dashed rgb(84, 84, 84);
         font-size: 17px;
@@ -127,7 +131,7 @@ body {
             font-size: 14px;
             font-weight: 400;
             float: left;
-            font-family: Que;
+            font-family: 'Open Sans', sans-serif;
             color: $p;
             a {
                 text-decoration: none;
@@ -140,6 +144,10 @@ body {
         } 
     }
     div {
+        display: inline-block;
+        padding: 2px 0px; 
+    }
+    .ico {
         display: inline-block;
         width: 55px;
         padding: 5px 0px; 
