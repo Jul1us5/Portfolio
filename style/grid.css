@@ -42,7 +42,6 @@
   -ms-grid-row-span: 3;
   -ms-grid-column: 5;
   grid-area: r;
-  background-color: #eeeeee;
 }
 
 #page > .area {
@@ -83,6 +82,16 @@
     width: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .wrapper .container .lang {
+    display: block;
+    width: 48%;
+    height: 100%;
+    float: left;
+    margin-left: 0%;
+  }
+  .wrapper .container .lang:last-of-type {
+    float: right;
   }
   .wrapper .container .text {
     height: auto;
@@ -169,7 +178,7 @@
   }
   #page > .right {
     width: 100%;
-    height: 200px;
+    height: 300px;
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -214,6 +223,16 @@
   .wrapper {
     height: 100%;
     padding: 0px 6px;
+  }
+  .wrapper .container .lang {
+    display: block;
+    width: 48%;
+    height: 100%;
+    float: left;
+    margin-left: 0%;
+  }
+  .wrapper .container .lang:last-of-type {
+    float: right;
   }
   .wrapper .container .box {
     height: 80%;
