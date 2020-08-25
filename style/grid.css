@@ -2,7 +2,6 @@
   max-width: 1170px;
   margin: auto;
   overflow: hidden;
-  background-color: white;
 }
 
 #page {
@@ -22,7 +21,6 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: q;
-  background-color: white;
 }
 
 #page > .title {
@@ -30,7 +28,6 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: t;
-  background-color: transparent;
 }
 
 #page > .left {
@@ -38,7 +35,6 @@
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: l;
-  background-color: transparent;
 }
 
 #page > .right {
@@ -55,7 +51,6 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: a;
-  background-color: transparent;
 }
 
 #page > .bottom {
