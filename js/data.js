@@ -28,7 +28,7 @@ const nav = [
     {
         img: 'sass.png',
         text: 'SASS',
-    },  
+    },
     {
         img: 'php.png',
         text: 'PHP',
@@ -85,7 +85,7 @@ const links = [
         link: 'https://github.com/Jul1us5',
         title: 'GIT',
         img: 'fa-github',
-    } 
+    }
 ];
 
 const texts = [
@@ -98,5 +98,44 @@ const texts = [
         veniam? Dolorum numquam laboriosam dolore, dolorem ratione tempora repellat necessitatibus
         inventore, beatae voluptatem aliquid sed blanditiis, illo quae. Quod, non? Placeat iure unde
         repudiandae voluptatum omnis tempore et necessitatibus laudantium?`
-    } 
+    }
+];
+
+const arry = [
+    'Skills',
+    'Kalbos'
+];
+
+const skill = [
+    {
+        label: 'Javascript',
+        value: '55%',
+    },
+    {
+        label: 'CSS, HTML',
+        value: '85%'
+    },
+    {
+        label: 'PHP',
+        value: '60%'
+    },
+];
+
+const langs = [
+    {
+        label: 'Lietuvių',
+        value: '95%',
+    },
+    {
+        label: 'Anglų',
+        value: '65%'
+    },
+    {
+        label: 'Rusų',
+        value: '85%'
+    },
+    {
+        label: 'Lenkų',
+        value: '30%'
+    }
 ];

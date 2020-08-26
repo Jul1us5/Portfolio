@@ -5,8 +5,8 @@ let field = '';
 
 const navList = nav;
 
-for(let i = 0; i < nav.length; i++) {
-    field += `<div class="ico">
+for (let i = 0; i < nav.length; i++) {
+  field += `<div class="ico">
                 <img src="./img/ico/${navList[i]['img']}" alt="">
                 <p>${navList[i]['text']}</p>
               </div>`;
@@ -21,7 +21,7 @@ let newLinks = '';
 
 const linkList = links;
 
-for(let i = 0; i < linkList.length; i++) {
+for (let i = 0; i < linkList.length; i++) {
   newLinks += `<p><i class="fa ${linkList[i]['img']}"></i><a href="${linkList[i]['link']}">${linkList[i]['title']}</a></p>`;
 }
 
@@ -31,6 +31,62 @@ link.innerHTML = newLinks;
 
 let textArea = document.querySelector('.text');
 textArea.innerHTML = texts[0]['text'];
+
+// Print Skill bar and Lang
+
+let skills = document.getElementById('skills');
+let arryField = '';
+let skillField = '';
+let langsField = '';
+
+for (let i = 0; i < skill.length; i++) {
+  skillField += `   <div class="progress-bar">
+                      <div class="texts">
+                          <div class="label">${skill[i].label}</div>
+                          <div class="value">${skill[i].value}</div>
+                      </div>
+                      <div class="bar">
+                          <div class="value" style="width: ${skill[i].value};">
+                              <div class="loading"></div>
+                          </div>
+                      </div>
+                    </div>`;
+
+}
+
+for (let i = 0; i < langs.length; i++) {
+  langsField += `   <div class="progress-bar">
+                      <div class="texts">
+                          <div class="label">${langs[i].label}</div>
+                          <div class="value">${langs[i].value}</div>
+                      </div>
+                      <div class="bar">
+                          <div class="value" style="width: ${langs[i].value};">
+                              <div class="loading"></div>
+                          </div>
+                      </div>
+                    </div>`;
+
+}
+
+for (let i = 0; i < arry.length; i++) {
+  if (i == 0) {
+    arryField += `<div class="lang">
+                  <span>${arry[i]}</span>
+                        ${skillField}
+                  </div>`;
+  } else {
+    arryField += `<div class="lang">
+                  <span>${arry[i]}</span>
+                        ${langsField}
+                  </div>`;
+  }
+
+}
+
+skills.innerHTML = arryField;
+
+
 
 
 
