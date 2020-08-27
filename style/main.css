@@ -1,12 +1,13 @@
 body {
-  background-color: #fefefe;
+  background-color: white;
+  font-family: sans-serif;
 }
 
 body .wrapper {
   background-color: transparent;
 }
 
-.qr img {
+.qr svg {
   margin-top: 15px;
   width: 80%;
   height: 80%;
@@ -87,7 +88,7 @@ body .wrapper {
   display: block;
   width: 100%;
   height: 60%;
-  background: url(/img/IM.JPG);
+  background: url(../img/IM.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px 0px 0px 20px;
@@ -124,11 +125,12 @@ body .wrapper {
   display: block;
   width: 100%;
   height: 40%;
+  margin-top: 20px;
 }
 
 .container .contact .fa {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   float: left;
   margin-right: 20px;
   font-size: 18px;
@@ -177,7 +179,7 @@ body .wrapper {
   padding: 5px 0px;
 }
 
-.container .ico img {
+.container .ico svg {
   width: 30px;
   height: 30px;
   margin-left: calc(25px - 10px);

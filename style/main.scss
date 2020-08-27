@@ -1,16 +1,16 @@
 
-// @import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 $p: rgb(72, 72, 72); // <p> color with <a>
 
 body {
-    background-color: rgb(254, 254, 254);
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
     .wrapper {
         background-color: transparent;
     }
 }
 .qr {  
-    img {
+    svg {
         margin-top: 15px;
         width: 80%;
         height: 80%;
@@ -77,7 +77,7 @@ body {
         display: block;
         width: 100%;
         height: 60%;
-        background: url(/img/IM.JPG);
+        background: url(../img/IM.JPG);
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 20px 0px 0px 20px;
@@ -108,9 +108,10 @@ body {
         display: block;
         width: 100%;
         height: 40%;
+        margin-top: 20px;
         .fa {
-            width: 20px;
-            height: 20px;
+            width: 22px;
+            height: 22px;
             float: left;
             margin-right: 20px;
             font-size: 18px;
@@ -151,7 +152,7 @@ body {
         display: inline-block;
         width: 55px;
         padding: 5px 0px; 
-        img {
+        svg {
             width: 30px;
             height: 30px;
             margin-left: calc(25px - 10px);

@@ -7,8 +7,10 @@ const navList = nav;
 
 for (let i = 0; i < nav.length; i++) {
   field += `<div class="ico">
-                <img src="./img/ico/${navList[i]['img']}" alt="">
-                <p>${navList[i]['text']}</p>
+              <svg>                    
+                <use xlink:href="#${navList[i]['img']}"></use>            
+              </svg>
+              <p>${navList[i]['text']}</p> 
               </div>`;
 }
 
@@ -27,7 +29,7 @@ for (let i = 0; i < linkList.length; i++) {
 
 link.innerHTML = newLinks;
 
-// Print Links
+// Print Text
 
 let textArea = document.querySelector('.text');
 textArea.innerHTML = texts[0]['text'];
@@ -85,7 +87,6 @@ for (let i = 0; i < arry.length; i++) {
 }
 
 skills.innerHTML = arryField;
-
 
 
 
