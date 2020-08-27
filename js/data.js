@@ -2,55 +2,55 @@
 
 const nav = [
     {
-        img: 'jira.svg',
+        img: 'jira',
         text: 'Jira',
     },
     {
-        img: 'git.svg',
+        img: 'git',
         text: 'GIT',
     },
     {
-        img: 'agile.png',
+        img: 'agile',
         text: 'Agile',
     },
     {
-        img: 'js.jpg',
+        img: 'js',
         text: 'JS',
     },
     {
-        img: 'css.png',
+        img: 'css',
         text: 'CSS',
     },
     {
-        img: 'html.svg',
+        img: 'html',
         text: 'HTML',
     },
     {
-        img: 'sass.png',
+        img: 'sass',
         text: 'SASS',
     },
     {
-        img: 'php.png',
+        img: 'php',
         text: 'PHP',
     },
     {
-        img: 'mysql.svg',
+        img: 'mysql',
         text: 'MySQL',
     },
     {
-        img: 'laravel.png',
+        img: 'laravel',
         text: 'Laravel',
     },
     {
-        img: 'wordpress.png',
+        img: 'wp',
         text: 'WordPress',
     },
     {
-        img: 'npm.png',
+        img: 'npm',
         text: 'NPM',
     },
     {
-        img: 'ps.png',
+        img: 'ps',
         text: 'PS',
     }
 ];

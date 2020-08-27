@@ -9,14 +9,19 @@
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/skill.css">
     <link rel="stylesheet" href="./style/font-awesome.min.css">
+
     <title>Jul1u5</title>
 </head>
 
 <body>
+
     <div class="wrapper">
         <section id="page">
             <div class="qr">
-                <img src="./img/qr/qr-code.svg" alt="QR">
+                <svg>
+                    <?php include('./img/include/img.php'); ?>
+                    <use xlink:href="#qr"></use>
+                </svg>
             </div>
             <div class="nav">
                 <div class="container">
@@ -29,8 +34,10 @@
             <div class="title">
                 <div class="container">
                     <span>
-                        <h3>Junior FRONT-END Developer</h3>
+                        <div class="who">Junior FRONT-END Developer</div>
                     </span>
+                    <?php include('./img/include/img.php'); ?>
+
                     <div class="all"></div>
                 </div>
             </div>
