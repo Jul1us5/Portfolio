@@ -40,6 +40,13 @@ link.innerHTML = newLinks;
 let textArea = document.querySelector('.text');
 textArea.innerHTML = texts[0]['text'];
 
+// Print Foto
+
+console.log(foto);
+let fotoIm = document.getElementById('foto');
+fotoIm.innerHTML = foto[0]['img'];
+
+
 // Print Skill bar and Lang
 
 let skills = document.getElementById('skills');
