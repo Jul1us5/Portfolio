@@ -3,18 +3,24 @@
 let title = document.querySelector('.all');
 let field = '';
 
-const navList = nav;
+const navList = svg;
+
 
 for (let i = 0; i < nav.length; i++) {
-  field += `<div class="ico">
-              <svg>                    
-                <use xlink:href="#${navList[i]['img']}"></use>            
-              </svg>
+  field += `<div class="ico">      
+                 ${navList[i]['img']}          
               <p>${navList[i]['text']}</p> 
-              </div>`;
+            </div>`;
 }
 
 title.innerHTML = field;
+
+
+// Print QR code 
+
+let qrCode = document.getElementById('qr');
+qrCode.innerHTML = qr[0]['img'];
+
 
 // Print Links
 
