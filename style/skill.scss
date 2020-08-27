@@ -1,3 +1,5 @@
+$p: rgb(0, 157, 255);
+
 .progress-bar {
     display: inline-block;
     width: 98%;
@@ -13,19 +15,18 @@
     .progress-bar > .texts {
         display: inline-block;
         width: 100%;
-        // color: rgb(228, 17, 17);
         font-size: 16px;
         line-height: 20px;
     }
      .progress-bar > .texts > .label {
         display: inline-block;
         float: left;
-        color: black;
+        color: $p;
         text-transform: capitalize;
      }
      .progress-bar > .texts > .value {
         display: inline-block;
-        color: black;
+        color: $p;
         float: right;
     }
 .progress-bar > .bar {
@@ -63,7 +64,7 @@
 @keyframes loading {
     0% {
         width: 0;
-        background-color: #36f;
+        background-color: rgb(255, 0, 0);
     }
     100% {
         width: 100%;
