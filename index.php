@@ -17,12 +17,7 @@
 
     <div class="wrapper">
         <section id="page">
-            <div class="qr">
-                <svg>
-                    <?php include('./img/include/img.php'); ?>
-                    <use xlink:href="#qr"></use>
-                </svg>
-            </div>
+            <div id="qr" class="qr"></div>
             <div class="nav">
                 <div class="container">
                     <div class="nav_title">Resume</div>
@@ -36,7 +31,7 @@
                     <span>
                         <div class="who">Junior FRONT-END Developer</div>
                     </span>
-                    <?php include('./img/include/img.php'); ?>
+                    
 
                     <div class="all"></div>
                 </div>
@@ -77,6 +72,7 @@
             </div>
         </section>
     </div>
+    <script src="./js/img.js"></script>
     <script src="./js/data.js"></script>
     <script src="./js/main.js"></script>
 </body>
