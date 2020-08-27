@@ -22,13 +22,13 @@
 .progress-bar > .texts > .label {
   display: inline-block;
   float: left;
-  color: black;
+  color: #009dff;
   text-transform: capitalize;
 }
 
 .progress-bar > .texts > .value {
   display: inline-block;
-  color: black;
+  color: #009dff;
   float: right;
 }
 
@@ -71,7 +71,7 @@
 @-webkit-keyframes loading {
   0% {
     width: 0;
-    background-color: #36f;
+    background-color: red;
   }
   100% {
     width: 100%;
@@ -82,7 +82,7 @@
 @keyframes loading {
   0% {
     width: 0;
-    background-color: #36f;
+    background-color: red;
   }
   100% {
     width: 100%;
