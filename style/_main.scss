@@ -3,7 +3,6 @@ $p: rgb(0, 157, 255); // <p> color with <a>
 body {
     background-color: rgb(255, 255, 255);
     .wrapper {
-        font-family: 'Londrina Solid', cursive;
         background-color: transparent;
         overflow: hidden;
     }
@@ -69,39 +68,31 @@ body {
     }
     .logo {
         margin-top: 10px;
+        margin-left: 20px;
+        font-size: 20px;
         width: 200px;
+        font-weight: bold;
     }
     .box {
-        display: block;
-        width: 100%;
-        height: 60%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 20px 0px 0px 20px;
+        width: 90%;
+        height: 250px;
+        margin-top: 15px;
         svg {
             width: 100%;
             height: 100%;
+            border-radius: 20px;
         }
     }
     .text {
         display: grid;
-        width: 97%;
-        min-height: 250px;
-        grid-template-columns: 1fr;
-        height: 200px;
-        margin-left: 10px; // ???
-        font-family: 'Inconsolata', monospace;
+        width: 100%;
+        height: 240px;
         font-weight: 400;
         padding: 15px;
         background-color: rgb(209, 237, 255);
         margin-right: 120px;
         font-size: 17px;
         line-height: 19px;
-        transition: 1s;
-    }
-    .text:hover {
-        box-shadow: 3px 3px rgb(52, 52, 52);
-        transition: 1s;
     }
     .all {
         margin-top: 10px;
@@ -115,13 +106,12 @@ body {
     .contact {
         display: block;
         width: 100%;
-        height: 40%;
-        margin-top: 20px;
+        height: 50%;
+        margin-top: 10px;
         .fa {
-            width: 22px;
-            height: 22px;
-            float: left;
-            margin-right: 20px;
+            width: 23px;
+            height: 23px;
+            margin-right: 10px;
             font-size: 18px;
             text-align: center;
             background-color: rgb(201, 201, 201);
@@ -134,17 +124,18 @@ body {
             transition: 0.5s;
         }
         p {
+            position: relative;
+            display: inline-block;
             width: 100%;
-            font-size: 10px;
+            margin-bottom: 2px;
             text-align: left;
             font-size: 14px;
-            font-weight: 400;
             float: left;
-            font-family: 'Londrina Solid', cursive;
             color: $p;
             a {
+                position: absolute;
                 text-decoration: none;
-                font-weight: bold;
+                margin-top: 6px;
                 color: $p;
             }           
         } 
