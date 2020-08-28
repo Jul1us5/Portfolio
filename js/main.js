@@ -3,7 +3,7 @@
 let title = document.querySelector('.all');
 let field = '';
 
-const navList = svg;
+const navList = svgPics;
 
 
 for (let i = 0; i < nav.length; i++) {
@@ -100,7 +100,3 @@ for (let i = 0; i < arry.length; i++) {
 }
 
 skills.innerHTML = arryField;
-
-
-
-
