@@ -1,11 +1,12 @@
 
-$fields: rgb(242, 242, 242); // BOX field color
+$fields: rgb(233, 233, 233); // BOX field color
 
 .wrapper { 
     max-width: 1170px;
     height: 100vh;
     margin: auto;
     overflow: hidden;
+    padding: 0px 10px;
     
 }
 #page {
@@ -34,12 +35,14 @@ $fields: rgb(242, 242, 242); // BOX field color
   }
   #page > .right {
     grid-area: r;
+    max-height: 400px;
   } 
   #page > .area {
     grid-area: a;
   } 
   #page > .bottom {
     grid-area: b;
+    max-height: 400px;
     background-color: $fields;
   } 
   #page > .x {
@@ -74,6 +77,9 @@ $fields: rgb(242, 242, 242); // BOX field color
           .text {
             height: auto;
             margin: 0;
+          }
+          .logo {
+            padding-top: 20px;
           }
           .all {
             margin-top: 0px;
@@ -124,16 +130,20 @@ $fields: rgb(242, 242, 242); // BOX field color
         grid-template-rows: repeat(1, 1fr);
         grid-template-columns: repeat(3, 1fr);
         .box {
-          display: block;
-          width: 50%;
+          display: inline-block;
+          width: 45%;
           height: 100%;
           float: left;
+          svg {
+            width: 100%;
+          }
         }
         .contact {
           display: block;
-          width: 50%;
-          height: 100%;
+          width: 40%;
+          height: 120%;
           float: left;
+          margin-top: 20px;
           p {
             margin-top: 10px;
           }
@@ -202,6 +212,9 @@ $fields: rgb(242, 242, 242); // BOX field color
             height: 80%;
             width: 200px;
             margin-top: 20px;
+            svg {
+              width: 100%;
+            }
           }
           .text {
             min-height: 64.5%;
