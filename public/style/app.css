@@ -23,7 +23,7 @@ body * {
 #page {
   display: grid;
   grid-gap: 2px;
-  grid-template-areas: "q t t t t" "l a a a r" "l a a a r" "l b b b r" "x x x x x";
+  grid-template-areas: "q t t t t" "l a a a r" "l a a a r" "l b b b b" "x b b b b";
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(5, 1fr);
 }
@@ -32,34 +32,41 @@ body * {
   width: 100%;
   height: calc(100vh / 5);
   grid-area: q;
+  border: 1px solid red;
 }
 
 #page > .title {
   grid-area: t;
+  border: 1px solid red;
 }
 
 #page > .left {
   grid-area: l;
+  border: 1px solid red;
 }
 
 #page > .right {
   grid-area: r;
-  max-height: 400px;
+  max-height: 300px;
+  border: 1px solid red;
 }
 
 #page > .area {
   grid-area: a;
+  border: 1px solid red;
 }
 
 #page > .bottom {
   grid-area: b;
   max-height: 400px;
   background-color: #e9e9e9;
+  border: 1px solid red;
 }
 
 #page > .x {
   grid-area: x;
   background-color: #e9e9e9;
+  border: 1px solid red;
 }
 
 #page > .nav {
@@ -256,7 +263,6 @@ body * {
   }
 
   .wrapper .container .all {
-    margin-top: 52px;
     width: 100%;
     height: 100%;
     float: left;
@@ -272,20 +278,20 @@ body * {
 
   #page > .qr {
     width: 100%;
-    height: 100%;
+    height: 200px;
     margin-top: 10px;
     grid-area: q;
   }
 
   #page > .title {
     width: 100%;
-    height: 100px;
+    height: 200px;
+    margin-top: 10px;
     grid-area: t;
   }
 
   #page > .left {
     width: 100%;
-    height: 500px;
     margin-bottom: 120px;
     grid-area: l;
   }
@@ -387,9 +393,9 @@ body .wrapper {
 .container .lang {
   display: block;
   width: 100%;
-  height: 49%;
+  height: 50%;
   float: left;
-  padding-top: 20px;
+  margin-top: -5px;
   margin-left: 2%;
 }
 
@@ -511,22 +517,18 @@ body .wrapper {
 .progress-bar {
   display: inline-block;
   width: 98%;
-  height: 12px;
-}
-
-.bar:nth-child(1) {
-  background-color: #ff6f6f;
+  height: 8px;
 }
 
 .progress-bar + .progress-bar {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .progress-bar > .texts {
   display: inline-block;
   width: 100%;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 15px;
 }
 
 .progress-bar > .texts > .label {

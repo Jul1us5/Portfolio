@@ -16,8 +16,8 @@ $fields: rgb(233, 233, 233); // BOX field color
         "q t t t t"
         "l a a a r"
         "l a a a r"
-        "l b b b r"
-        "x x x x x"
+        "l b b b b"
+        "x b b b b"
     ;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(5, 1fr);
@@ -26,28 +26,35 @@ $fields: rgb(233, 233, 233); // BOX field color
     width: 100%;
     height: calc(100vh / 5);
     grid-area: q;
+    border: 1px solid red;
   }
   #page > .title {
     grid-area: t;
+    border: 1px solid red;
   }  
   #page > .left {
     grid-area: l;
+    border: 1px solid red;
   }
   #page > .right {
     grid-area: r;
-    max-height: 400px;
+    max-height: 300px;
+    border: 1px solid red;
   } 
   #page > .area {
     grid-area: a;
+    border: 1px solid red;
   } 
   #page > .bottom {
     grid-area: b;
     max-height: 400px;
     background-color: $fields;
+    border: 1px solid red;
   } 
   #page > .x {
     grid-area: x;
     background-color: $fields;
+    border: 1px solid red;
   }
   #page > .nav {
     display: none;
@@ -224,7 +231,7 @@ $fields: rgb(233, 233, 233); // BOX field color
             margin-top: 10px;
           }
           .all {
-            margin-top: 52px;
+            // margin-top: 52px;
             width: 100%;
             height: 100%;
             float: left;
@@ -247,18 +254,19 @@ $fields: rgb(233, 233, 233); // BOX field color
       }
       #page > .qr {       
         width: 100%;
-        height: 100%;
+        height: 200px;
         margin-top: 10px;
         grid-area: q;
       }
-      #page > .title {       
+      #page > .title {      
         width: 100%;
-        height: 100px;
+        height: 200px;
+        margin-top: 10px;
         grid-area: t;
       }
       #page > .left {
         width: 100%;
-        height: 500px;
+        // height: 500px;
         margin-bottom: 120px;
         grid-area: l;
       }
@@ -268,6 +276,7 @@ $fields: rgb(233, 233, 233); // BOX field color
       } 
       #page > .area {
         width: 100%;
+        // height: 500px;
         grid-area: a;
       } 
       #page > .bottom {
