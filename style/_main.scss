@@ -4,7 +4,6 @@ body {
     background-color: rgb(255, 255, 255);
     .wrapper {
         background-color: transparent;
-        overflow: hidden;
     }
 }
 .qr {  
@@ -61,9 +60,8 @@ body {
     .lang {
         display: block; 
         width: 100%;
-        height: 50%;
+        height: 49%;
         float: left;
-        margin-top: -5px;
         margin-left: 2%;
     }
     .logo {
@@ -74,7 +72,7 @@ body {
         font-weight: bold;
     }
     .box {
-        width: 90%;
+        width: 70%;
         height: 250px;
         margin-top: 15px;
         svg {
@@ -103,6 +101,11 @@ body {
     .links {
         width: 100%;  
     }
+    .project {
+        width: 100%;
+        height: 100%;
+        border: 1px solid red; 
+    }
     .contact {
         display: block;
         width: 100%;
@@ -125,7 +128,7 @@ body {
         }
         p {
             position: relative;
-            display: inline-block;
+            // display: inline-block;
             width: 100%;
             margin-bottom: 2px;
             text-align: left;
