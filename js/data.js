@@ -1209,10 +1209,10 @@ const langs = [
         label: 'Rusų',
         value: '85%'
     },
-    {
-        label: 'Lenkų',
-        value: '30%'
-    }
+    // {
+    //     label: 'Lenkų',
+    //     value: '30%'
+    // }
 ];
 
 

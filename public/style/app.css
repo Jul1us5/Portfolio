@@ -13,8 +13,7 @@ body * {
 }
 
 .wrapper {
-  max-width: 1170px;
-  height: 100vh;
+  max-width: 1100px;
   margin: auto;
   overflow: hidden;
   padding: 0px 10px;
@@ -22,51 +21,43 @@ body * {
 
 #page {
   display: grid;
-  grid-gap: 2px;
+  grid-gap: 5px;
   grid-template-areas: "q t t t t" "l a a a r" "l a a a r" "l b b b b" "x b b b b";
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 2fr);
+  grid-template-columns: repeat(5, 2fr);
 }
 
 #page > .qr {
   width: 100%;
-  height: calc(100vh / 5);
-  grid-area: q;
-  border: 1px solid red;
+  height: 130px;
 }
 
 #page > .title {
   grid-area: t;
-  border: 1px solid red;
 }
 
 #page > .left {
   grid-area: l;
-  border: 1px solid red;
 }
 
 #page > .right {
   grid-area: r;
   max-height: 300px;
-  border: 1px solid red;
 }
 
 #page > .area {
   grid-area: a;
-  border: 1px solid red;
 }
 
 #page > .bottom {
   grid-area: b;
   max-height: 400px;
-  background-color: #e9e9e9;
-  border: 1px solid red;
+  background-color: white;
 }
 
 #page > .x {
   grid-area: x;
-  background-color: #e9e9e9;
-  border: 1px solid red;
+  background-color: white;
 }
 
 #page > .nav {
@@ -113,7 +104,6 @@ body * {
   }
 
   .wrapper .container .meniu {
-    display: inline-block;
     width: 50px;
     height: 50px;
     margin-right: 30px;
@@ -128,7 +118,6 @@ body * {
   }
 
   .wrapper .container .nav_title {
-    display: inline-block;
     width: 100px;
     height: 30px;
     text-align: center;
@@ -147,12 +136,11 @@ body * {
   #page {
     grid-template-areas: "n n n" "l l l" "t t t" "a a a" "r r r" "b b b" "x x x";
     grid-gap: 1px;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+    grid-template-columns: 200px;
   }
 
   #page .box {
-    display: inline-block;
     width: 45%;
     height: 100%;
     float: left;
@@ -207,13 +195,13 @@ body * {
 
   #page > .bottom {
     width: 100%;
-    height: 200px;
+    height: 400px;
     grid-area: b;
   }
 
   #page > .x {
     width: 100%;
-    height: 300px;
+    height: 400px;
     grid-area: x;
   }
 
@@ -227,6 +215,7 @@ body * {
 
 @media only screen and (max-width: 1000px) and (min-width: 601px) {
   .wrapper {
+    max-width: 750px;
     height: 100%;
     padding: 0px 6px;
   }
@@ -263,6 +252,7 @@ body * {
   }
 
   .wrapper .container .all {
+    margin-top: 52px;
     width: 100%;
     height: 100%;
     float: left;
@@ -272,13 +262,13 @@ body * {
     display: grid;
     grid-gap: 2px;
     grid-template-areas: "q t t t t" "l a a a a" "l a a a a" "r r r r r" "b b b b b" "x x x x x";
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 250px;
+    grid-template-columns: 200px;
   }
 
   #page > .qr {
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     margin-top: 10px;
     grid-area: q;
   }
@@ -292,27 +282,36 @@ body * {
 
   #page > .left {
     width: 100%;
-    margin-bottom: 120px;
     grid-area: l;
+  }
+
+  #page > .left .box {
+    width: 99%;
+    height: 350px;
   }
 
   #page > .right {
     width: 100%;
+    height: 200px;
+    padding-top: 20px;
     grid-area: r;
   }
 
   #page > .area {
     width: 100%;
+    height: 100%;
     grid-area: a;
   }
 
   #page > .bottom {
     width: 100%;
+    height: 300px;
     grid-area: b;
   }
 
   #page > .x {
     width: 100%;
+    height: 300px;
     grid-area: x;
   }
 
@@ -330,7 +329,6 @@ body {
 
 body .wrapper {
   background-color: transparent;
-  overflow: hidden;
 }
 
 .qr svg {
@@ -393,9 +391,8 @@ body .wrapper {
 .container .lang {
   display: block;
   width: 100%;
-  height: 50%;
+  height: 49%;
   float: left;
-  margin-top: -5px;
   margin-left: 2%;
 }
 
@@ -408,7 +405,7 @@ body .wrapper {
 }
 
 .container .box {
-  width: 90%;
+  width: 70%;
   height: 250px;
   margin-top: 15px;
 }
@@ -442,6 +439,12 @@ body .wrapper {
   width: 100%;
 }
 
+.container .project {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+
 .container .contact {
   display: block;
   width: 100%;
@@ -468,7 +471,6 @@ body .wrapper {
 
 .container .contact p {
   position: relative;
-  display: inline-block;
   width: 100%;
   margin-bottom: 2px;
   text-align: left;
@@ -602,5 +604,12 @@ body .wrapper {
     width: 100%;
     background-color: orange;
   }
+}
+
+.timeline {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed black;
 }
 
