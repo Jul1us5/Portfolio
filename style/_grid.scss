@@ -4,7 +4,6 @@ $fields: rgb(255, 255, 255); // BOX field color
 .wrapper { 
     max-width: 1100px;
     margin: auto;
-    overflow: hidden;
     padding: 0px 10px;
     
 }
@@ -18,8 +17,8 @@ $fields: rgb(255, 255, 255); // BOX field color
         "l b b b b"
         "x b b b b"
     ;
-    grid-template-rows: repeat(5, 2fr);
-    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 #page > .qr {
     width: 100%;
@@ -40,11 +39,12 @@ $fields: rgb(255, 255, 255); // BOX field color
   } 
   #page > .bottom {
     grid-area: b;
-    max-height: 400px;
+
     background-color: $fields;
   } 
   #page > .x {
     grid-area: x;
+    height: 140px;
     background-color: $fields;
   }
   #page > .nav {
@@ -230,6 +230,7 @@ $fields: rgb(255, 255, 255); // BOX field color
       #page {
         display: grid;
         grid-gap: 2px;
+      
         grid-template-areas:
             "q t t t t"
             "l a a a a"
