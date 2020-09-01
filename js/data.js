@@ -1141,11 +1141,11 @@ const links = [
         title: 'Julius Vlasovas',
         img: 'fa-user-circle-o',
     },
-    {
-        link: '#',
-        title: 'FRONT-END',
-        img: 'fa-cube',
-    },
+    // {
+    //     link: '#',
+    //     title: 'FRONT-END',
+    //     img: 'fa-cube',
+    // },
     {
         link: '#',
         title: '+37064835040',
