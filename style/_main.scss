@@ -19,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    
 }
 .area_Field {
     width: 300px;
@@ -54,13 +55,13 @@ body {
     }
     span {
         animation: morph 2s linear infinite;
-        border-radius: 40px 50px 60px 70px;
+        border-radius: 100px 50px 60px 70px;
         z-index: 5;
         border: 1px solid rgb(28, 168, 255);
         box-shadow: 1px 2px  rgb(139, 195, 255);
         @keyframes morph {
             0% {
-                border-radius: 54px 60px 50px 54px;
+                border-radius: 90px 50px 60px 80px;
             }
             25% {
                 border-radius: 40px 50px 70px 60px;
@@ -69,7 +70,7 @@ body {
                 border-radius: 60px 40px 50px 70px;
             }
             100% {
-            border-radius: 54px 60px 50px 54px;
+            border-radius: 80px 60px 50px 90px;
             }
         }
     }
@@ -103,7 +104,7 @@ body {
         height: 240px;
         font-size: 17px;
         padding-right: 50px;
-        padding-top: 50px;
+        padding-top: 20px;
         letter-spacing: 1px;
         margin-right: 120px;
         font-size: 17px;
@@ -151,10 +152,12 @@ body {
                 text-decoration: none;
                 margin-top: 6px;
                 color: $p;
+                letter-spacing: 1.5px;
+                font-weight: bold;
             }           
         } 
         a:hover {
-            color: rgb(45, 175, 255);
+            color: rgb(0, 105, 216);
         } 
     }
     div {
@@ -177,6 +180,9 @@ body {
             font-size: 10px;
             margin-top: 3px;
             font-weight: bold;
+            letter-spacing: 1px;
+            line-height: 17px;
+            color: rgb(72, 72, 72);
         }
     }
 }

@@ -1,14 +1,9 @@
-
-@font-face {
-    font-family: 'MyWebFont';
-    src: url('/fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf') format('woff2');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
 body,
 body * {
 margin: 0;
 padding: 0;
 vertical-align: top;
 box-sizing: border-box;
-font-family: 'MyWebFont';
+font-family: 'Dosis', sans-serif;
 }
