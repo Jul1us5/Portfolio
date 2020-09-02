@@ -45,6 +45,31 @@ textArea.innerHTML = texts[0]['text'];
 let fotoIm = document.getElementById('foto');
 fotoIm.innerHTML = foto[0]['img'];
 
+// Print Projects
+
+let project = document.querySelector('.project');
+let projectField = '';
+
+for(let i = 0; i < projectItem.length; i++) {
+    projectField += ` <div class="item">
+                        <a class="card1" href="${projectItem[i]['url']}">
+                          <h3>${projectItem[i]['title']}</h3>
+                        </a>
+                      </div>`;
+}
+project.innerHTML = projectField;
+
+
+// Print Arrows for all
+
+let manoDarbai1 = document.getElementById('arrow1');
+let manoDarbai4 = document.getElementById('arrow4');
+let manoDarbai5 = document.getElementById('arrow5');
+manoDarbai1.innerHTML = projects[0]['img'];
+manoDarbai4.innerHTML = projects[3]['img'];
+manoDarbai5.innerHTML = projects[4]['img'];
+
+
 
 // Print Skill bar and Lang
 
@@ -87,11 +112,17 @@ for (let i = 0; i < arry.length; i++) {
   if (i == 0) {
     arryField += `<div class="lang">
                   <span>${arry[i]}</span>
+                        <div class="arrow">
+                            ${projects[1]['img']}
+                        </div>
                         ${skillField}
                   </div>`;
   } else {
     arryField += `<div class="lang">
                   <span>${arry[i]}</span>
+                        <div class="arrow">
+                            ${projects[2]['img']}
+                        </div>
                         ${langsField}
                   </div>`;
   }

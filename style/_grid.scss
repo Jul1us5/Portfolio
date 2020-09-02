@@ -6,10 +6,12 @@ $fields: rgb(255, 255, 255); // BOX field color
     margin: auto;
     padding: 0px 10px;
     
+    
 }
 #page {
     display: grid;
     grid-gap: 5px;
+
     grid-template-areas:
         "q t t t t"
         "l a a a r"
@@ -31,21 +33,57 @@ $fields: rgb(255, 255, 255); // BOX field color
     grid-area: l;
   }
   #page > .right {
+    position: relative;
     grid-area: r;
     max-height: 300px;
+    svg {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      transform: rotate(50deg);
+      z-index: 100;
+      padding-left: -10px;
+      padding-bottom: 10px;
+    }
   } 
   #page > .area {
     grid-area: a;
+    svg {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      transform: rotate(150deg);
+      z-index: 100;
+      padding: 0px;
+    }
   } 
   #page > .bottom {
     grid-area: b;
-
+    img {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      transform: rotate(60deg);
+      z-index: 100;
+      padding: 0px;
+      padding-bottom: 10px;
+    }
     background-color: $fields;
   } 
   #page > .x {
+    position: relative;
     grid-area: x;
     height: 140px;
     background-color: $fields;
+    svg {
+        position: absolute;
+        width: 35px;
+        height: 30px;
+        transform: rotate(30deg);
+        z-index: 100;
+        padding: 2px;
+        padding-bottom: 20px;
+    }
   }
   #page > .nav {
     display: none;
@@ -56,34 +94,34 @@ $fields: rgb(255, 255, 255); // BOX field color
       width: 98%;
       height: 100%;
       padding: 0px 2px;
-        .container {
-          span {
+      .container {
+        span {
             width: 100px;
             margin-top: 20px;
             margin-bottom: 20px;
-          }
-          .lang {
+        }
+        .lang {
             display: block; 
             width: 48%;
             height: 100%;
             float: left;
             margin-left: 0%;
-          }
-          .lang:last-of-type {
+        }
+        .lang:last-of-type {
             float: right;
-          }
-          .text {
+        }
+        .text {
             height: auto;
             margin: 0;
-          }
-          .logo {
+        }
+        .logo {
             padding-top: 20px;
-          }
-          .all {
+        }
+        .all {
             margin-top: 0px;
             padding: 15px;
-          }
-          .meniu {
+        }
+        .meniu {
             width: 50px;
             height: 50px;
             margin-right: 30px;
@@ -91,25 +129,25 @@ $fields: rgb(255, 255, 255); // BOX field color
             padding-top: 15px;
             float: right;
             .fa {
-              font-size: 30px;
-              color: rgb(0, 0, 0);
+               font-size: 30px;
+               color: rgb(0, 0, 0);
             }
-          }
-          .nav_title {
-            width: 100px;
-            height: 30px; 
-            text-align: center; 
-            background-color: rgb(208, 208, 208);
-            color: rgb(0, 0, 0);
-            float: left;
-            font-weight: bold;
-            border-radius: 0px 0px 7px 7px;
-          }
-          .nav_title:hover {
-            background-color: rgb(24, 24, 24);
-            color: white;
-          }
         }
+        .nav_title {
+          width: 100px;
+          height: 30px; 
+          text-align: center; 
+          background-color: rgb(208, 208, 208);
+          color: rgb(0, 0, 0);
+          float: left;
+          font-weight: bold;
+          border-radius: 0px 0px 7px 7px;
+        }
+        .nav_title:hover {
+          background-color: rgb(24, 24, 24);
+          color: white;
+        }
+      }
     }
     #page {
         grid-template-areas:
@@ -126,170 +164,187 @@ $fields: rgb(255, 255, 255); // BOX field color
         grid-template-rows: 100px;
         grid-template-columns: 200px;
         .box {
-          width: 45%;
-          height: 100%;
-          float: left;
-          svg {
-            width: 100%;
-          }
+           width: 45%;
+           height: 100%;
+           float: left;
+           svg {
+             width: 100%;
+           }
         }
         .contact {
-          display: block;
-          width: 40%;
-          height: 120%;
-          float: left;
-          margin-top: 20px;
-          p {
-            margin-top: 10px;
-          }
+           display: block;
+           width: 54%;
+           height: 120%;
+           float: left;
+           margin-top: 20px;
+           p {
+             margin-top: 10px;
+           }
         }
       }
       #page > .qr {
-        display: none;
-        width: 100%;
-        height: calc(100vh / 5);
-        grid-area: q;
-        background-color: white;
+         display: none;
+         width: 100%;
+         height: calc(100vh / 5);
+         grid-area: q;
+         background-color: white;
       }
       #page > .title {
-        width: 100%;
-        grid-area: t;
+         width: 100%;
+         grid-area: t;
       }
       #page > .left {
-        width: 100%;
-        height: 300px;
-        grid-area: l;
+         width: 100%;
+         height: 300px;
+         grid-area: l;
       }
       #page > .right {
-        width: 100%;
-        height: 300px;
-        grid-area: r;
+         width: 100%;
+         height: 300px;
+         grid-area: r;
+         svg {
+           display: none;
+         }
       } 
       #page > .area {
-        width: 100%;
-        margin-bottom: 30px;
-        grid-area: a;
+         width: 100%;
+         margin-bottom: 30px;
+         grid-area: a;
+         .text {
+           padding-right: 0px;
+         }
+         svg {
+           display: none;
+         }
       } 
       #page > .bottom {
-        width: 100%;
-        height: 400px;
-        grid-area: b;
+         width: 100%;
+         height: 400px;
+         grid-area: b;
+         svg {
+           display: none;
+         }
       } 
       #page > .x {
-        width: 100%;
-        height: 400px;
-        grid-area: x;
+         width: 100%;
+         height: 400px;
+         grid-area: x;
+         svg {
+           display: none;
+         }
       }
       #page > .nav {
-        display: inline-block;
-        width: 100%;
-        height: 60px;
-        grid-area: n; 
+         display: inline-block;
+         width: 100%;
+         height: 60px;
+         grid-area: n; 
       } 
     }
 
 @media only screen and (max-width: 1000px) and (min-width: 601px)  {
       .wrapper {
-        max-width: 750px;
-        height: 100%;
-        padding: 0px 6px;
-        .container {
-          .lang {
-            display: block; 
-            width: 48%;
-            height: 100%;
-            float: left;
-            margin-left: 0%;
-          }
-          .lang:last-of-type {
-            float: right;
-          }
-          .box {
-            height: 80%;
-            width: 200px;
-            margin-top: 20px;
-            svg {
-              width: 100%;
+         max-width: 750px;
+         height: 100%;
+         padding: 0px 6px;
+         .container {
+            .lang {
+              display: block; 
+              width: 48%;
+              height: 100%;
+              float: left;
+              margin-left: 0%;
+            }
+            .lang:last-of-type {
+              float: right;
+            }
+            .box {
+              height: 80%;
+              width: 200px;
+              margin-top: 20px;
+              svg {
+                width: 100%;
+              }
+            }
+            .text {
+                min-height: 64.5%;
+                margin-bottom: 20px;
+            }
+            .contact {
+                margin-top: 10px;
+            }
+            .all {
+                margin-top: 52px;
+                width: 100%;
+                height: 100%;
+                float: left;
             }
           }
-          .text {
-            min-height: 64.5%;
-            margin-bottom: 20px;
-          }
-          .contact {
-            margin-top: 10px;
-          }
-          .all {
-            margin-top: 52px;
-            width: 100%;
-            height: 100%;
-            float: left;
-          }
-        }
       }
       #page {
-        display: grid;
-        grid-gap: 2px;
-      
-        grid-template-areas:
+         display: grid;
+         grid-gap: 2px;
+         grid-template-areas:
             "q t t t t"
             "l a a a a"
             "l a a a a"
             "r r r r r"
             "b b b b b"
             "x x x x x"
-        ;
-        grid-template-rows: 250px;
-        grid-template-columns: 200px;
+         ;
+         grid-template-rows: 250px;
+         grid-template-columns: 200px;
       }
       #page > .qr {       
-        width: 100%;
-        min-height: 200px;
-        margin-top: 10px;
-        grid-area: q;
+         width: 100%;
+         min-height: 200px;
+         margin-top: 10px;
+         grid-area: q;
       }
       #page > .title {      
-        width: 100%;
-        height: 200px;
-        margin-top: 10px;
-        grid-area: t;
+         width: 100%;
+         height: 200px;
+         margin-top: 10px;
+         grid-area: t;
       }
       #page > .left {
-        width: 100%;
-        grid-area: l;
-        .box {
-          width: 99%;
-          height: 350px;
-        }
+         width: 100%;
+         grid-area: l;
+         .box {
+           width: 99%;
+           height: 350px;
+         }
       }
       #page > .right {
-        width: 100%;
-        height: 200px;
-        padding-top: 20px;
-        grid-area: r;
+         width: 100%;
+         height: 200px;
+         padding-top: 20px;
+         grid-area: r;
       } 
       #page > .area {
-        width: 100%;
-        height: 100%;
-        grid-area: a;
+         width: 100%;
+         height: 100%;
+         grid-area: a;
+         .arrow {
+           display: none;
+         }
       } 
       #page > .bottom {
-        width: 100%;
-        height: 300px;
-        grid-area: b;
+         width: 100%;
+         height: 300px;
+         grid-area: b;
       } 
       #page > .x {
-        width: 100%;
-        height: 300px;
-        grid-area: x;
+         width: 100%;
+         height: 300px;
+         grid-area: x;
       }
       #page > .nav {
-        display: none;
-        width: 100%;
-        height: 60px;
-        grid-area: n;
+         display: none;
+         width: 100%;
+         height: 60px;
+         grid-area: n;
       }
-    }
+}
 
 
   
