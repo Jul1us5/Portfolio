@@ -3,11 +3,11 @@ $p: rgb(0, 157, 255);
 .progress-bar {
     display: inline-block;
     width: 98%;
-    height: 8px;
+    height: 20px;
 }
 
 .progress-bar + .progress-bar {
-    margin-top: 20px;
+    margin-top: 12px;
 }
     .progress-bar > .texts {
         display: inline-block;
