@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap);body,
+@import url(https://fonts.googleapis.com/css2?family=Atma:wght@300&display=swap);body,
 body * {
   margin: 0;
   padding: 0;
   vertical-align: top;
   box-sizing: border-box;
-  font-family: "Dosis", sans-serif;
+  font-family: "Atma", cursive;
 }
 
 .wrapper {
@@ -58,7 +58,7 @@ body * {
   position: absolute;
   width: 30px;
   height: 30px;
-  transform: rotate(150deg);
+  transform: rotate(120deg);
   z-index: 100;
   padding: 0px;
 }
@@ -68,7 +68,7 @@ body * {
   background-color: white;
 }
 
-#page > .bottom img {
+#page > .bottom svg {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -434,56 +434,13 @@ body .wrapper {
 
 .container span {
   position: relative;
-  width: 100px;
   float: left;
-  padding-top: 2px;
-  background-color: white;
   text-align: center;
-}
-
-.container span {
-  -webkit-animation: morph 2s linear infinite;
-          animation: morph 2s linear infinite;
-  border-radius: 100px 50px 60px 70px;
-  z-index: 5;
-  border: 1px solid #1ca8ff;
-  box-shadow: 1px 2px #8bc3ff;
-}
-
-@-webkit-keyframes morph {
-  0% {
-    border-radius: 90px 50px 60px 80px;
-  }
-
-  25% {
-    border-radius: 40px 50px 70px 60px;
-  }
-
-  75% {
-    border-radius: 60px 40px 50px 70px;
-  }
-
-  100% {
-    border-radius: 80px 60px 50px 90px;
-  }
-}
-
-@keyframes morph {
-  0% {
-    border-radius: 90px 50px 60px 80px;
-  }
-
-  25% {
-    border-radius: 40px 50px 70px 60px;
-  }
-
-  75% {
-    border-radius: 60px 40px 50px 70px;
-  }
-
-  100% {
-    border-radius: 80px 60px 50px 90px;
-  }
+  margin-left: 10px;
+  background-color: white;
+  color: #1c1c1c;
+  padding: 0px 10px;
+  border: 1px dashed #888888;
 }
 
 .container .lang {
@@ -498,7 +455,7 @@ body .wrapper {
   margin-top: 10px;
   margin-left: 20px;
   font-size: 20px;
-  width: 200px;
+  width: 300px;
   font-weight: bold;
 }
 
@@ -617,11 +574,11 @@ body .wrapper {
 .progress-bar {
   display: inline-block;
   width: 98%;
-  height: 8px;
+  height: 20px;
 }
 
 .progress-bar + .progress-bar {
-  margin-top: 20px;
+  margin-top: 12px;
 }
 
 .progress-bar > .texts {
@@ -730,10 +687,10 @@ h3 {
 .card1 {
   display: block;
   position: relative;
-  height: 60px;
+  height: 51px;
   background-color: #ffffff;
   border-radius: 0px;
-  margin: 1px;
+  margin: 0.5px;
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
