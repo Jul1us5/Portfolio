@@ -1,32 +1,95 @@
+
 .timeline {
     display: inline-block;
     width: 100%;
     height: 90%;
-    // border: 1px dashed black;
-    .timeBox {
-        display: inline-block;
-        width: 24.5%;
+    .left {
+        width: 75%;
         height: 100%;
-        // padding: 2px;
-        background-color: rgb(137, 227, 255);
-        h3 {
-            text-align: center;
-            padding: 0;
-            margin: 0;
-            border-bottom: 1px dashed rgb(255, 255, 255);
-            line-height: 20px;
+        float: left;
+        .left_box {
+            width: 32%;
+            height: 100%;
+            background-color: rgba(185, 234, 255, 0.6);
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 45px;
+                border: none;
+                text-align: center;
+                // background-color: violet;
+                padding: 5px 0px;
+                margin: 0;
+                font-size: 18px;
+                font-weight: bold;
+                color: rgb(75, 75, 75);
+                border-bottom: 1px dashed white;
+            }
+            b {
+                display: inline-block;
+                width: 100%;
+                color: black;
+                text-align: center;
+                font-size: 10px;
+                color: rgb(0, 115, 255);
+                // border-bottom: 1px dashed white;
+            }
+            p {
+                width: 100%;
+                font-size: 12px;
+                padding: 2px;
+            }
         }
-        p {
-            text-align: center;
-            font-size: 12px;
-        }
-        .boxy {
+    }
+    .right {
+        width: 25%;
+        height: 100%;
+        float: right;
+        .right_box {
+            width: 49%;
+            height: 49%;
             float: left;
-            width: calc(98% / 2);
-            text-align: center;
-            height: 49.5%;
+            background-color: rgb(130, 213, 238);
             margin: 1px;
-            background-color: rgb(255, 255, 255);
         }
     }
 }
+
+
+
+
+
+// .timeline {
+//     display: inline-block;
+//     width: 100%;
+//     height: 90%;
+//     // border: 1px dashed black;
+//     .timeBox {
+//         display: inline-block;
+//         width: 24.5%;
+//         height: 100%;
+//         // padding: 2px;
+//         background-color: rgb(137, 227, 255);
+//         h3 {
+//             text-align: center;
+//             padding: 0;
+//             margin: 0;
+//             border-bottom: 1px dashed rgb(255, 255, 255);
+//             line-height: 20px;
+//         }
+//         p {
+//             text-align: center;
+//             font-size: 12px;
+//         }
+//         .boxy {
+//             float: left;
+//             width: calc(98% / 2);
+//             text-align: center;
+//             height: 49.5%;
+//             margin: 1px;
+//             background-color: rgb(255, 255, 255);
+//         }
+//     }
+// }
