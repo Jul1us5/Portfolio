@@ -68,12 +68,13 @@
         width: 25%;
         height: 100%;
         float: right;
-        .right_box {
-            width: 49%;
-            height: 49%;
-            float: left;
-            background-color: rgb(130, 213, 238);
-            margin: 1px;
-        }
+        border-bottom: 1px solid rgb(0, 179, 255);
+        // .right_box {
+        //     width: 49%;
+        //     height: 49%;
+        //     float: left;
+        //     background-color: rgb(130, 213, 238);
+        //     margin: 1px;
+        // }
     }
 }
