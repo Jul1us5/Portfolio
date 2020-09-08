@@ -53,7 +53,8 @@ body {
         line-height: 17px;
         color: rgb(28, 28, 28);
         padding: 0px 10px;
-        border: 1px dashed rgb(208, 208, 208);
+        // border: 1px dashed rgb(223, 223, 223);
+        box-shadow: 2px 5px 20px 0px rgba(0, 0, 0, 0.5);
     }
     .lang {
         display: block; 
