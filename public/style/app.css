@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap);.box {
+@import url(https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap);@charset "UTF-8";
+
+.box {
   width: 80%;
   height: 250px;
   margin-left: 0px;
@@ -524,16 +526,32 @@ body .wrapper {
 }
 
 .container .text {
+  position: relative;
   display: grid;
   width: 100%;
   height: 240px;
-  font-size: 17px;
-  padding-right: 50px;
-  padding-top: 5px;
+  padding: 5px 10px 5px 20px;
   letter-spacing: 1px;
   margin-right: 120px;
   font-size: 16px;
   line-height: 22px;
+  text-shadow: 2px 2px #dadada;
+  border-left: 1px solid #24a0ff;
+}
+
+.container .text::after {
+  content: "\201C";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  top: 50px;
+  left: -8px;
+  font-size: 30px;
+  line-height: 30px;
+  border-radius: 10px;
 }
 
 .container .all {
@@ -551,7 +569,7 @@ body .wrapper {
   display: block;
   width: 100%;
   height: 50%;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .container .contact .fa {
@@ -584,7 +602,7 @@ body .wrapper {
 .container .contact p a {
   position: absolute;
   text-decoration: none;
-  margin-top: 6px;
+  margin-top: -1px;
   color: #009dff;
   letter-spacing: 1.5px;
   font-weight: bold;
@@ -638,6 +656,7 @@ body .wrapper {
   width: 100%;
   font-size: 14px;
   line-height: 15px;
+  margin-top: 5px;
 }
 
 .progress-bar > .texts > .label {
@@ -740,6 +759,13 @@ body .wrapper {
 .timeline .left .left_box .box_text {
   padding: 20px;
   line-height: 20px;
+}
+
+.timeline .left .left_box .box_text b {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #00b3ff;
 }
 
 .timeline .left .left_box span {
