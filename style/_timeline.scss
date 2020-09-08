@@ -20,6 +20,12 @@
             .box_text {
                 padding: 20px;
                 line-height: 20px;  
+                b {
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                color: rgb(0, 179, 255);
+                }
             }
             span {
                 display: flex;
@@ -38,7 +44,6 @@
                 box-shadow: 1px 1px 20px -3px rgba(0, 0, 0, 0.5);
             }
             b {
-
                 display: inline-block;
                 width: 100%;
                 color: rgb(91, 91, 91);
@@ -69,12 +74,5 @@
         height: 100%;
         float: right;
         border-bottom: 1px solid rgb(0, 179, 255);
-        // .right_box {
-        //     width: 49%;
-        //     height: 49%;
-        //     float: left;
-        //     background-color: rgb(130, 213, 238);
-        //     margin: 1px;
-        // }
     }
 }

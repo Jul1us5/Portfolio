@@ -1263,17 +1263,17 @@ const langs = [
 const timeline = [
     {
         title: 'Pradžia',
-        date: '2019.10 - 2020.02',
+        date: '2019.10 | 2020.02',
         text: 'Savarankiškai pradėjau mokytis CSS ir HTML pagrindų.',
     },
     {
         title: 'Baltic Institute of Technology',
-        date: '2020.02 / 2020.08',
+        date: '2020.02 | 2020.08',
         text: 'Mokiausi HTML, CSS, JAVASCRIPT, JAVA, PHP, MYSQL. Išmokau naudotis GITų. Laravel MVC',
     },
     {
         title: 'Praktika',
-        date: '2020.08 / 2020.09',
+        date: '2020.08 | 2020.09',
         text: 'WordPress. MVC, Autoloadai, Pluginai, Temos, Laravel Mix, API. Jira',
     },
 ];

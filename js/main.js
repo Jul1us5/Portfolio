@@ -80,8 +80,10 @@ for(let i = 0; i<timeline.length; i++) {
                 <span>${timeline[i].title}
                     <b>${timeline[i].date}</b>
                 </span>
-                <div class="box_text">${timeline[i].text}</div>
+                <div class="box_text">${timeline[i].text}
                 <b>. . . . .</b>
+                </div>
+                
             </div>`;
             
 }
