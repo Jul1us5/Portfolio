@@ -70,6 +70,23 @@ manoDarbai4.innerHTML = projects[3]['img'];
 manoDarbai5.innerHTML = projects[4]['img'];
 
 
+// Print Timeline 
+
+let timeline_Box = document.getElementById('left');
+let xHTML = '';
+
+for(let i = 0; i<timeline.length; i++) {
+    xHTML += `<div class="left_box">
+                <span>${timeline[i].title}
+                    <b>${timeline[i].date}</b>
+                </span>
+                <div class="box_text">${timeline[i].text}</div>
+                <b>. . . . .</b>
+            </div>`;
+            
+}
+timeline_Box.innerHTML = xHTML;
+
 
 // Print Skill bar and Lang
 
