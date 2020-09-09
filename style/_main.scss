@@ -1,6 +1,7 @@
 $p: rgb(0, 157, 255); // <p> color with <a>
 
 body {
+    position: relative;
     background-color: rgb(255, 255, 255);
     .wrapper {
         background-color: transparent;
@@ -53,7 +54,7 @@ body {
         line-height: 17px;
         color: rgb(28, 28, 28);
         padding: 0px 10px;
-        // border: 1px dashed rgb(223, 223, 223);
+  
         box-shadow: 2px 5px 10px -2px rgba(0, 0, 0, 0.5);
     }
     .lang {
@@ -151,6 +152,7 @@ body {
     div {
         display: inline-block;
         padding: 2px 0px; 
+        // margin: 10px 0px;
     }
     .ico {
         display: inline-block;

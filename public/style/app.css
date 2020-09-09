@@ -80,6 +80,19 @@ body * {
   padding: 0px 10px;
 }
 
+.wrapper .copy {
+  display: inline-block;
+  position: absolute;
+  width: 400px;
+  top: 60%;
+  right: -185px;
+  padding: 0px 5px;
+  transform: rotate(-90deg);
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #484848;
+}
+
 #page {
   display: grid;
   grid-gap: 5px;
@@ -171,6 +184,10 @@ body * {
     padding: 0px 2px;
   }
 
+  .wrapper .copy {
+    display: none;
+  }
+
   .wrapper .container span {
     width: 100px;
     margin-top: 20px;
@@ -200,7 +217,12 @@ body * {
 
   .wrapper .container .all {
     margin-top: 0px;
-    padding: 15px;
+    padding: 0px 0px;
+  }
+
+  .wrapper .container .all .ico {
+    width: 60px;
+    height: 60px;
   }
 
   .wrapper .container .meniu {
@@ -233,6 +255,43 @@ body * {
     color: white;
   }
 
+  .wrapper .container .left {
+    width: 100%;
+  }
+
+  .wrapper .container .left .left_box {
+    width: 48%;
+    height: 310px;
+    margin: 2px;
+    float: left;
+  }
+
+  .wrapper .container .right {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50%;
+    height: 300px;
+    margin: 6px;
+  }
+
+  .wrapper .container .right aside {
+    width: 100%;
+    padding: 0;
+    height: 300px;
+  }
+
+  .wrapper .container .project .item {
+    width: 50%;
+    height: 100px;
+    float: left;
+  }
+
+  .wrapper .container .project .item .card1 {
+    height: 98px;
+    margin: 1px;
+  }
+
   #page {
     grid-template-areas: "n n n" "l l l" "t t t" "a a a" "r r r" "b b b" "x x x";
     grid-gap: 1px;
@@ -244,6 +303,7 @@ body * {
     width: 45%;
     height: 100%;
     float: left;
+    padding-left: 30px;
   }
 
   #page .box svg {
@@ -256,6 +316,7 @@ body * {
     height: 120%;
     float: left;
     margin-top: 20px;
+    padding-left: 30px;
   }
 
   #page .contact p {
@@ -273,17 +334,19 @@ body * {
   #page > .title {
     width: 100%;
     grid-area: t;
+    margin-top: -30px;
   }
 
   #page > .left {
     width: 100%;
+    margin-top: -30px;
     height: 300px;
     grid-area: l;
   }
 
   #page > .right {
     width: 100%;
-    height: 300px;
+    height: 200px;
     grid-area: r;
   }
 
@@ -307,7 +370,6 @@ body * {
 
   #page > .bottom {
     width: 100%;
-    height: 400px;
     grid-area: b;
   }
 
@@ -317,7 +379,7 @@ body * {
 
   #page > .x {
     width: 100%;
-    height: 400px;
+    height: 200px;
     grid-area: x;
   }
 
@@ -326,7 +388,7 @@ body * {
   }
 
   #page > .nav {
-    display: inline-block;
+    display: none;
     width: 100%;
     height: 60px;
     grid-area: n;
@@ -338,6 +400,10 @@ body * {
     max-width: 750px;
     height: 100%;
     padding: 0px 6px;
+  }
+
+  .wrapper .copy {
+    display: none;
   }
 
   .wrapper .container .lang {
@@ -368,13 +434,12 @@ body * {
   }
 
   .wrapper .container .contact {
-    margin-top: 10px;
+    margin-top: -60px;
   }
 
   .wrapper .container .all {
-    margin-top: 52px;
     width: 100%;
-    height: 100%;
+    height: 50%;
     float: left;
   }
 
@@ -389,7 +454,7 @@ body * {
   #page > .qr {
     width: 100%;
     min-height: 200px;
-    margin-top: 10px;
+    margin-top: 18px;
     grid-area: q;
   }
 
@@ -423,13 +488,10 @@ body * {
     grid-area: a;
   }
 
-  #page > .area .arrow {
-    display: none;
-  }
-
   #page > .bottom {
     width: 100%;
     height: 300px;
+    margin-bottom: 10px;
     grid-area: b;
   }
 
@@ -448,6 +510,7 @@ body * {
 }
 
 body {
+  position: relative;
   background-color: white;
 }
 
@@ -733,6 +796,7 @@ body .wrapper {
 }
 
 .timeline {
+  position: relative;
   display: inline-block;
   width: 100%;
   height: 90%;
@@ -828,10 +892,44 @@ body .wrapper {
 }
 
 .timeline .right {
+  position: relative;
   width: 25%;
   height: 100%;
   float: right;
   border-bottom: 1px solid #00b3ff;
+}
+
+.timeline .right .check-list {
+  margin-top: 10px;
+  padding-left: 1rem;
+}
+
+.timeline .right .check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2rem;
+}
+
+.timeline .right .check-list li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 5px;
+  height: 14px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #00b3ff;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+}
+
+.timeline .right aside {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 
 .project {
