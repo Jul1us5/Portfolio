@@ -47,7 +47,7 @@ $fields: rgb(255, 255, 255); // BOX field color
     grid-area: r;
     max-height: 300px;
     svg {
-      // display: none;
+      display: none;
       position: absolute;
       width: 40px;
       height: 40px;
@@ -60,27 +60,25 @@ $fields: rgb(255, 255, 255); // BOX field color
   #page > .area {
     grid-area: a;
     svg {
-      // display: none;
+      display: none;
       position: absolute;
       width: 30px;
       height: 30px;
       transform: rotate(120deg);
       z-index: 100;
       padding: 0px;
-      // padding-left: 10px;
     }
   } 
   #page > .bottom {
     grid-area: b;
     background-color: $fields;
     svg {
-      // display: none;
+      display: none;
       position: absolute;
       width: 35px;
       height: 35px;
       transform: rotate(55deg);
       z-index: 100;
-      // margin-bottom: 20px;
     }
   } 
   #page > .x {
@@ -89,7 +87,7 @@ $fields: rgb(255, 255, 255); // BOX field color
     height: 140px;
     background-color: $fields;
     svg {
-      // display: none;
+      display: none;
         position: absolute;
         width: 35px;
         height: 30px;
@@ -108,17 +106,19 @@ $fields: rgb(255, 255, 255); // BOX field color
       width: 98%;
       height: 100%;
       padding: 0px 2px;
+      
       .copy {
         display: none;
       }
       .container {
+        width: 100%;
+        overflow: hidden;
         span {
             width: 100px;
             margin-top: 20px;
             margin-bottom: 20px;
         }
         .lang {
-            display: block; 
             width: 48%;
             height: 100%;
             float: left;
@@ -135,6 +135,7 @@ $fields: rgb(255, 255, 255); // BOX field color
             padding-top: 20px;
         }
         .all {
+            width: 100%;
             margin-top: 0px;
             padding: 0px 0px;
             .ico {
@@ -155,11 +156,11 @@ $fields: rgb(255, 255, 255); // BOX field color
             }
         }
         .nav_title {
-          width: 100px;
+          width: 100%;
           height: 30px; 
           text-align: center; 
-          background-color: rgb(208, 208, 208);
-          color: rgb(0, 0, 0);
+          background-color:  rgb(0, 179, 255, 0.7);
+          color: rgb(249, 249, 249);
           float: left;
           font-weight: bold;
           border-radius: 0px 0px 7px 7px;
@@ -168,7 +169,7 @@ $fields: rgb(255, 255, 255); // BOX field color
           background-color: rgb(24, 24, 24);
           color: white;
         }
-        .left {
+        .left_side {
           width: 100%;
           .left_box {
             width: 48%;
@@ -184,11 +185,6 @@ $fields: rgb(255, 255, 255); // BOX field color
           width: 50%;
           height: 300px;
           margin: 6px;
-          aside {
-            width: 100%;
-            padding: 0;
-            height: 300px;
-          }
         }
         .project {
           .item {
@@ -217,6 +213,7 @@ $fields: rgb(255, 255, 255); // BOX field color
         grid-gap: 1px;
         grid-template-rows: 100px;
         grid-template-columns: 200px;
+     
         .box {
            width: 45%;
            height: 100%;
@@ -227,12 +224,11 @@ $fields: rgb(255, 255, 255); // BOX field color
            }
         }
         .contact {
-           display: block;
            width: 54%;
            height: 120%;
            float: left;
            margin-top: 20px;
-           padding-left: 30px;
+           padding-left: 40px;
            p {
              margin-top: 10px;
            }
@@ -249,6 +245,9 @@ $fields: rgb(255, 255, 255); // BOX field color
          width: 100%;
          grid-area: t;
          margin-top: -30px;
+         .logo {
+           width: 100%;
+         }
       }
       #page > .left {
          width: 100%;
@@ -277,7 +276,6 @@ $fields: rgb(255, 255, 255); // BOX field color
       } 
       #page > .bottom {
          width: 100%;
-        //  height: 400px;
          grid-area: b;
          svg {
            display: none;
@@ -285,14 +283,14 @@ $fields: rgb(255, 255, 255); // BOX field color
       } 
       #page > .x {
          width: 100%;
-         height: 200px;
+         height: 300px;
          grid-area: x;
          svg {
            display: none;
          }
       }
       #page > .nav {
-         display: none;
+         display: inline-block;
          width: 100%;
          height: 60px;
          grid-area: n; 
@@ -334,7 +332,7 @@ $fields: rgb(255, 255, 255); // BOX field color
                 margin-top: -60px;
             }
             .all {
-                // margin-top: 52px;
+                margin-top: 52px;
                 width: 100%;
                 height: 50%;
                 float: left;
@@ -385,9 +383,6 @@ $fields: rgb(255, 255, 255); // BOX field color
          width: 100%;
          height: 100%;
          grid-area: a;
-        //  .arrow {
-        //    display: none;
-        //  }
       } 
       #page > .bottom {
          width: 100%;
