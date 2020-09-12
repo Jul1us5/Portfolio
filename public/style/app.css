@@ -16,7 +16,7 @@
 .box .card {
   grid-area: 1/1;
   height: 250px;
-  width: 190px;
+  width: 170px;
   transform: translateX(-20px) rotateY(15deg) rotateX(10deg);
   display: flex;
   justify-content: flex-start;
@@ -63,97 +63,6 @@
 .box .border:before {
   will-change: transform;
   transition: 0.5s transform cubic-bezier(0.25, 0.46, 0.45, 1);
-}
-
-.progress-bar {
-  display: inline-block;
-  width: 98%;
-  height: 20px;
-}
-
-.progress-bar + .progress-bar {
-  margin-top: 5px;
-}
-
-.progress-bar > .texts {
-  display: inline-block;
-  width: 100%;
-  font-size: 14px;
-  line-height: 15px;
-  margin-top: 5px;
-}
-
-.progress-bar > .texts > .label {
-  display: inline-block;
-  float: left;
-  color: #009dff;
-  text-transform: capitalize;
-}
-
-.progress-bar > .texts > .value {
-  display: inline-block;
-  color: #009dff;
-  float: right;
-}
-
-.progress-bar > .bar {
-  display: inline-block;
-  width: 100%;
-  height: 3px;
-  background-color: #d8d8d8;
-}
-
-.progress-bar > .bar > .value {
-  display: inline-block;
-  width: 90%;
-  height: 10%;
-}
-
-.progress-bar > .bar > .value > .loading {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  margin-top: -4px;
-  background-color: #00a6ff;
-  -webkit-animation-name: loading;
-          animation-name: loading;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-}
-
-.progress-bar:hover > .bar > .value > .loading {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-
-@-webkit-keyframes loading {
-  0% {
-    width: 0;
-    background-color: #2563ff;
-  }
-
-  100% {
-    width: 100%;
-    background-color: #00a6ff;
-  }
-}
-
-@keyframes loading {
-  0% {
-    width: 0;
-    background-color: #2563ff;
-  }
-
-  100% {
-    width: 100%;
-    background-color: #00a6ff;
-  }
 }
 
 body,
@@ -340,14 +249,14 @@ body * {
   }
 
   .wrapper .container .nav_title {
+    display: inline-block;
     width: 100%;
     height: 30px;
     text-align: center;
-    background-color: rgba(0, 179, 255, 0.7);
-    color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #0289ff;
     float: left;
     font-weight: bold;
-    border-radius: 0px 0px 7px 7px;
   }
 
   .wrapper .container .nav_title:hover {
@@ -394,26 +303,32 @@ body * {
   }
 
   #page .box {
-    width: 45%;
+    width: 44%;
     height: 100%;
     float: left;
-    padding-left: 30px;
+    padding-left: 0;
   }
 
   #page .box svg {
     width: 100%;
   }
 
+  #page .box .card {
+    box-shadow: none;
+    transform: none;
+  }
+
   #page .contact {
-    width: 54%;
+    width: 56%;
     height: 120%;
     float: left;
     margin-top: 20px;
-    padding-left: 40px;
+    padding-left: 35px;
   }
 
   #page .contact p {
     margin-top: 10px;
+    font-size: 12px;
   }
 
   #page > .qr {
@@ -803,6 +718,97 @@ body .wrapper {
   color: #484848;
 }
 
+.progress-bar {
+  display: inline-block;
+  width: 98%;
+  height: 20px;
+}
+
+.progress-bar + .progress-bar {
+  margin-top: 5px;
+}
+
+.progress-bar > .texts {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 15px;
+  margin-top: 5px;
+}
+
+.progress-bar > .texts > .label {
+  display: inline-block;
+  float: left;
+  color: #009dff;
+  text-transform: capitalize;
+}
+
+.progress-bar > .texts > .value {
+  display: inline-block;
+  color: #009dff;
+  float: right;
+}
+
+.progress-bar > .bar {
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background-color: #d8d8d8;
+}
+
+.progress-bar > .bar > .value {
+  display: inline-block;
+  width: 90%;
+  height: 10%;
+}
+
+.progress-bar > .bar > .value > .loading {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-top: -4px;
+  background-color: #00a6ff;
+  -webkit-animation-name: loading;
+          animation-name: loading;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.progress-bar:hover > .bar > .value > .loading {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    width: 0;
+    background-color: #2563ff;
+  }
+
+  100% {
+    width: 100%;
+    background-color: #00a6ff;
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+    background-color: #2563ff;
+  }
+
+  100% {
+    width: 100%;
+    background-color: #00a6ff;
+  }
+}
+
 .timeline {
   position: relative;
   display: inline-block;
@@ -908,14 +914,16 @@ body .wrapper {
 }
 
 .timeline .right .check-list {
-  margin-top: 10px;
-  padding-left: 1rem;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 14.5px;
+  padding-left: 10px;
 }
 
 .timeline .right .check-list li {
   position: relative;
   list-style-type: none;
-  padding-left: 2rem;
+  padding-left: 15%;
 }
 
 .timeline .right .check-list li:before {
@@ -931,13 +939,6 @@ body .wrapper {
   border-color: #00b3ff;
   transform-origin: bottom left;
   transform: rotate(45deg);
-}
-
-.timeline .right aside {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
 }
 
 .project {

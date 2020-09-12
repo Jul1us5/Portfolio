@@ -156,14 +156,15 @@ $fields: rgb(255, 255, 255); // BOX field color
             }
         }
         .nav_title {
+          display: inline-block;
           width: 100%;
           height: 30px; 
           text-align: center; 
-          background-color:  rgb(0, 179, 255, 0.7);
-          color: rgb(249, 249, 249);
+          background-color:  rgba(255, 255, 255, 0.4);
+          color: rgb(2, 137, 255);
           float: left;
           font-weight: bold;
-          border-radius: 0px 0px 7px 7px;
+          // border-radius: 0px 0px 7px 7px;
         }
         .nav_title:hover {
           background-color: rgb(24, 24, 24);
@@ -215,22 +216,31 @@ $fields: rgb(255, 255, 255); // BOX field color
         grid-template-columns: 200px;
      
         .box {
-           width: 45%;
+           width: 44%;
            height: 100%;
            float: left;
-           padding-left: 30px;
+           padding-left: 0;
+          //  box-shadow: 0 10px 30px -3px rgb(123, 58, 58);
+          
            svg {
              width: 100%;
            }
+           .card {
+            box-shadow: none;
+            transform: none;
+           }
         }
         .contact {
-           width: 54%;
+           width: 56%;
            height: 120%;
            float: left;
            margin-top: 20px;
-           padding-left: 40px;
+           padding-left: 35px;
+           
            p {
              margin-top: 10px;
+             font-size: 12px;
+             
            }
         }
       }
