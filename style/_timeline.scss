@@ -42,7 +42,9 @@
                 font-weight: bold;
                 color: rgb(0, 179, 255);
                 border-bottom: 1px dashed white;
+                background-color: transparent;
                 box-shadow: 1px 1px 20px -3px rgba(0, 0, 0, 0.5);
+                text-shadow: none;
             }
             b {
                 display: inline-block;
