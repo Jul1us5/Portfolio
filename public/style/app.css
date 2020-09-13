@@ -576,13 +576,25 @@ body .wrapper {
 .container span {
   position: relative;
   float: left;
-  text-align: center;
+  height: 20px;
   margin-left: 10px;
   line-height: 14px;
-  color: #828282;
+  color: #0f8fff;
   padding: 5px 20px;
   font-weight: bold;
-  border-bottom: 1px solid #89d4ff;
+  text-shadow: 2px 2px #d7d7d7;
+  background-repeat: no-repeat;
+}
+
+.container strong {
+  font-weight: 400;
+}
+
+.container strong::after {
+  bottom: -0.2rem;
+  height: 0.5rem;
+  left: -0.25rem;
+  right: -0.25rem;
 }
 
 .container .lang {
@@ -860,7 +872,9 @@ body .wrapper {
   font-weight: bold;
   color: #00b3ff;
   border-bottom: 1px dashed white;
+  background-color: transparent;
   box-shadow: 1px 1px 20px -3px rgba(0, 0, 0, 0.5);
+  text-shadow: none;
 }
 
 .timeline .left_side .left_box b {
