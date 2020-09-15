@@ -1,81 +1,20 @@
 $p: rgb(0, 157, 255); // <p> color with <a>
 
-body {
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    .wrapper {
-        background-color: transparent;
-    }
-}
-.qr {  
-    svg {
-        margin-top: 15px;
-        width: 80%;
-        height: 80%;
-    }
-}
-.area > p {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    
-}
-.area_Field {
-    width: 300px;
-    height: 100px;
-    margin-left: calc(50% - 150px);
-    margin-top: 100px;
-    h1 {
-        border: 1px dashed rgba(0, 0, 0, 0.5);
-        border-radius: 10px 0px 10px 0px;
-        color: rgb(1, 1, 1);
-        padding: 10px;
-        font-size: 20px;
-        text-align: center;
-    }
-    p {
-        color: rgba(255, 0, 0, 0.8);
-        margin-left: calc(50% - 100px);
-        font-size: 10px;
-        padding: 10px;
-    }
-}
-
 .container {
     width: 100%;
     height: 100%;
     span {
-   
         position: relative;
         float: left;
         height: 20px;
-        // text-align: center;
         margin-left: 10px;
         line-height: 14px;
         color: rgb(15, 143, 255);
         padding: 5px 20px;
         font-weight: bold;
         text-shadow: 2px 2px rgb(215, 215, 215);
-        // border-left: 1px solid rgb(230, 230, 230);
-        // background: url('/Portfolio/music.svg');
         background-repeat: no-repeat;
-        // border-top: 1px solid rgb(230, 230, 230);
-        // text-shadow: 1px 1px rgb(83, 146, 255);
-        // box-shadow: 2px 5px 10px -2px rgba(0, 0, 0, 0.5);
     }
-    strong {
-        font-weight: 400;  
-      
-        &::after {
-          // Specific positioning for smaller text
-          bottom: -0.2rem;
-          height: 0.5rem;
-          left: -0.25rem;
-          right: -0.25rem;
-        }
-      }
     .lang {
         display: block; 
         width: 100%;
@@ -102,6 +41,7 @@ body {
         font-size: 16px;
         line-height: 22px;
         text-shadow: 2px 2px #dadada;
+        text-align: center;
         border-left: 1px solid rgb(36, 160, 255);
     }
     .text::after {
@@ -171,7 +111,6 @@ body {
     div {
         display: inline-block;
         padding: 2px 0px; 
-        // margin: 10px 0px;
     }
     .ico {
         display: inline-block;

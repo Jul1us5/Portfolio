@@ -149,3 +149,23 @@ for (let i = 0; i < arry.length; i++) {
 }
 
 skills.innerHTML = arryField;
+
+// Print Soft skills
+
+
+let softskills = document.getElementById('soft');
+
+let HTML = `<aside>
+
+
+<ul class="check-list">`;
+
+for(let i = 0; i < soft.length; i++) {
+    HTML += `<li>${soft[i].title}</li>`;
+}
+    HTML += ` </ul>
+
+    </aside>`;
+
+softskills.innerHTML = HTML;
+
