@@ -1278,6 +1278,29 @@ const timeline = [
     },
 ];
 
+const soft = [
+    {
+        title: 'Komandinis darbas',
+    },
+    {
+        title: 'Bendravimas',
+    },
+    {
+        title: 'Atsakomybė',
+    },
+    {
+        title: 'Lankstumas',
+    },
+    {
+        title: 'Pagarba',
+    },
+    {
+        title: 'Motyvacija',
+    },
+    {
+        title: 'Sąžiningumas',
+    },
+];
 
 
 
