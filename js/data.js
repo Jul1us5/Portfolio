@@ -1552,7 +1552,7 @@ const qr = [
     {
         img: `<svg version="1.1" id="qr" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 493 493" enable-background="new 0 0 493 493" xml:space="preserve">
-        <rect x="0" y="0" width="80" height="80" fill="rgb(255,255,255)" /><g transform="translate(34,34)"><g transform="translate(136,0) scale(0.17,0.17)"><g transform="" style="fill: rgb(0, 0, 0);">
+        <rect x="0" y="0" fill="rgb(255,255,255)" /><g transform="translate(34,34)"><g transform="translate(136,0) scale(0.17,0.17)"><g transform="" style="fill: rgb(0, 0, 0);">
         <polygon points="0,50 50,100 100,50 50,0"/>
         </g></g><g transform="translate(153,0) scale(0.17,0.17)"><g transform="" style="fill: rgb(0, 0, 0);">
         <polygon points="0,50 50,100 100,50 50,0"/>

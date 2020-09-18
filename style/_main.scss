@@ -41,8 +41,9 @@ $p: rgb(0, 157, 255); // <p> color with <a>
         font-size: 16px;
         line-height: 22px;
         text-shadow: 2px 2px #dadada;
-        text-align: center;
+        text-align: left;
         border-left: 1px solid rgb(36, 160, 255);
+        word-break: break-all;
     }
     .text::after {
         content: '\201C';
