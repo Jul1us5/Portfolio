@@ -1208,14 +1208,22 @@ const links = [
 
 const texts = [
     {
-        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nisi obcaecati fugit rem animi
-        sequi delectus cum quo deserunt inventore accusamus est, quis ipsum dignissimos quam quibusdam
-        culpa dolores veritatis molestiae. Adipisci m ratione tempora repellat necessitatibus
-        inventore, beatae voluptatem aliquid sed blanditiis, illo quae. Quod, non? Placeat iure unde
-        repudiandae voluptatum omnis tempore et necessitatibus laudantium?eveniet totam aliquid tempora id labore est facilis
-        veniam? Dolorum numquam laboriosam dolore, dolorem ratione tempora repellat necessitatibus
-        inventore, beatae voluptatem aliquid sed blanditiis, illo quae. Quod, non? Placeat iure unde
-        repudiandae voluptatum omnis tempore et necessitatibus laudantium?`
+        text: `Labas, Aš esu Julius. Front-End programuotojas.
+        Noriu trumpai papasakoti apie save
+        Esu puikiai baigęs ŽINIATINKLIO PROGRAMUOTOJO MODULINĖ PROFESINIO MOKYMO PROGRAMĄ, kuri trūko puse metų.
+        Programavimu domiuosi pakankamai ilgai.
+        Programavimas mane visada domino ir palei šia diena nenustoja stebinti naujovėmis.
+        Esu tikras, kad tai būtent ta sritis, kurioje  noriu  realizuoti save, savo sugebėjimus ir tobulėti. 
+        Esu kūrybingas, komunikabilus, trokštantis dirbti, sąžiningas ir  atsakingas. Aktyvus ir iniciatyvus, bet tuo pačiu draugiškas (lojalus). Duotas užduotis atlieku labai kruopščiai ir su užsispyrimu, tad niekada nepalieku nepabaigtu darbų. 
+        Turiu daug patirties dirbant komandoje, stresinėse situacijose, patirtis personalo  valdyme, tad esu tas, kuris nebijo nauju iššūkių ir naujovių.
+        Daug laiko mokausi savarankiškai, nes man tai begalo patinka.
+        Programuotojo sritis reikalaujanti daug dėmesio. Naujovių sekimas, darbas komandoje, komunikabilumas  yra labai svarbūs. Taip pat mokėjimas bendrauti su esamais ir busimais klientais, taip pat adekvačiai reaguoti į pastebėjimus ar kritiką. 
+        Šiuo metu mokausi ir praktikuojuosi savarankiškai. Ieškau darbdavio, organizacijos, kuri suteiktų man galimybę toliau tobulėti, realizuoti savus sugebėjimus, bei siekti asmeniniu tikslų.
+        Organizacijai už suteiktas galimybes  pažadu aktyviai ir atsakingai dirbti, bei dalyvauti komandiniuose darbuose, siekti organizacijos užsibrėžtu tikslų, sekti ir kas karta gerinti organizacijos rezultatus. 
+        Viliuosi kartu su organizacija augti, kaip šios srities specialistas.
+        Jei toks kandidatas kaip aš jus sudomino, labai lauksiu jūsų kvietimo į pokalbį. Esu pasiruošęs aktyviam darbui.
+        
+        `
     }
 ];
 

@@ -68,6 +68,7 @@ $fields: transparent; // BOX field color
   } 
   #page > .area {
     grid-area: a;
+    height: 250px;
     p {
       display: flex;
       width: 100%;
@@ -88,6 +89,8 @@ $fields: transparent; // BOX field color
   #page > .bottom {
     grid-area: b;
     background-color: $fields;
+    height: 250px;
+    margin-top: 30px;
     svg {
       // display: none;
       position: absolute;
