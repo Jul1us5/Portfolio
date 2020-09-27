@@ -3,7 +3,7 @@
 .box {
   width: 80%;
   height: 250px;
-  margin-left: 0px;
+  margin-left: 20px;
 }
 
 .box .border {
@@ -125,7 +125,7 @@ body * {
 
 #page > .area {
   grid-area: a;
-  height: 250px;
+  margin-top: -20px;
 }
 
 #page > .area p {
@@ -216,9 +216,9 @@ body * {
 
   .wrapper .container .text {
     height: auto;
-    margin: 0;
     margin-left: 4px;
-    padding-left: 10px;
+    padding: 0px 15px 0px 5px;
+    word-break: none;
   }
 
   .wrapper .container .logo {
@@ -305,7 +305,7 @@ body * {
   }
 
   #page .box {
-    width: 44%;
+    width: 42%;
     height: 100%;
     float: left;
     padding-left: 0;
@@ -321,7 +321,7 @@ body * {
   }
 
   #page .contact {
-    width: 56%;
+    width: 52%;
     height: 120%;
     float: left;
     margin-top: 20px;
@@ -345,6 +345,7 @@ body * {
     width: 100%;
     grid-area: t;
     margin-top: -30px;
+    margin-bottom: 40px;
   }
 
   #page > .title .logo {
@@ -375,7 +376,8 @@ body * {
   }
 
   #page > .area .text {
-    padding-right: 0px;
+    padding: 0px 5px 0px 10px;
+    word-wrap: none;
   }
 
   #page > .area svg {
@@ -384,6 +386,7 @@ body * {
 
   #page > .bottom {
     width: 100%;
+    height: auto;
     grid-area: b;
   }
 
@@ -562,7 +565,7 @@ body * {
   position: relative;
   display: grid;
   width: 100%;
-  height: 290px;
+  height: 270px;
   padding: 5px 5px 0px 10px;
   letter-spacing: 1px;
   margin-right: 120px;
@@ -570,7 +573,6 @@ body * {
   line-height: 15px;
   text-align: left;
   border-left: 1px solid #24a0ff;
-  word-break: break-all;
 }
 
 .container .text::after {
