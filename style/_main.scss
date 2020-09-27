@@ -34,7 +34,7 @@ $p: rgb(0, 157, 255); // <p> color with <a>
         position: relative;
         display: grid;
         width: 100%;
-        height: 290px;
+        height: 270px;
         padding: 5px 5px 0px 10px;
         letter-spacing: 1px;
         margin-right: 120px;
@@ -44,7 +44,7 @@ $p: rgb(0, 157, 255); // <p> color with <a>
         // text-shadow: 2px 2px #dadada;
         text-align: left;
         border-left: 1px solid rgb(36, 160, 255);
-        word-break: break-all;
+        // word-break: break-all;
     }
     .text::after {
         content: '\201C';
