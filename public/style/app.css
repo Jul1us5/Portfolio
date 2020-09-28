@@ -217,7 +217,7 @@ body * {
   .wrapper .container .text {
     height: auto;
     margin-left: 4px;
-    padding: 0px 15px 0px 5px;
+    padding: 0px 15px 0px 10px;
     word-break: none;
   }
 
@@ -376,8 +376,7 @@ body * {
   }
 
   #page > .area .text {
-    padding: 0px 5px 0px 10px;
-    word-wrap: none;
+    width: 100%;
   }
 
   #page > .area svg {
@@ -568,7 +567,7 @@ body * {
   height: 270px;
   padding: 5px 5px 0px 10px;
   letter-spacing: 1px;
-  margin-right: 120px;
+  margin-right: 0px;
   font-size: 14px;
   line-height: 15px;
   text-align: left;

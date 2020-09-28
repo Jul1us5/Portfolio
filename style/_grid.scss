@@ -151,7 +151,7 @@ $fields: transparent; // BOX field color
         .text {
             height: auto;
             margin-left: 4px;
-            padding: 0px 15px 0px 5px;
+            padding: 0px 15px 0px 10px;
             word-break: none;
         }
         .logo {
@@ -301,8 +301,9 @@ $fields: transparent; // BOX field color
          margin-bottom: 30px;
          grid-area: a;
          .text {
-           padding: 0px 5px 0px 10px;
-           word-wrap: none;
+           width: 100%;
+          //  padding: 0px 5px 0px 10px;
+          //  word-wrap: none;
          }
          svg {
            display: none;

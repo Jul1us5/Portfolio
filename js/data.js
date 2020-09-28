@@ -1291,7 +1291,7 @@ const soft = [
         title: 'Komandinis darbas',
     },
     {
-        title: 'Bendravimas',
+        title: 'Komunikabilumas',
     },
     {
         title: 'Atsakomybė',
@@ -1300,13 +1300,13 @@ const soft = [
         title: 'Lankstumas',
     },
     {
-        title: 'Pagarba',
-    },
-    {
         title: 'Motyvacija',
     },
     {
         title: 'Sąžiningumas',
+    },
+    {
+        title: 'Bendravimas',
     },
 ];
 
