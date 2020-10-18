@@ -1235,7 +1235,7 @@ const arry = [
 const skill = [
     {
         label: 'Javascript',
-        value: '55%',
+        value: '70%',
     },
     {
         label: 'CSS, HTML',
@@ -1243,7 +1243,7 @@ const skill = [
     },
     {
         label: 'PHP',
-        value: '60%'
+        value: '55%'
     },
 ];
 
